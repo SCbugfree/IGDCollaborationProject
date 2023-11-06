@@ -13,7 +13,7 @@ public class TextControl : MonoBehaviour
     private float timer;
    
 
-    private void TypingText(TMP_Text dialogueText, string textContent, float typeTime)
+    public void TypingText(TMP_Text dialogueText, string textContent, float typeTime)
     {
         this.dialogueText = dialogueText;
         this.textContent = textContent;
@@ -38,7 +38,15 @@ public class TextControl : MonoBehaviour
                 timer += typeTime; //reset timer
                 charIndex++;
                 dialogueText.text = textContent.Substring(0, charIndex); //extract character of the text
+
+                if (charIndex >= textContent.Length) //if entire string has been displayed
+                {
+                    dialogueText = null;
+
+                    return;
+                }
             }
+
         }
     }
 }
