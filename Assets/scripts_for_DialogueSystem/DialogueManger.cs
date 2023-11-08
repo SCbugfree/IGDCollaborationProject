@@ -7,18 +7,14 @@ using TMPro;
 
 public class DialogueManger : MonoBehaviour
 {
-    //public GameObject optionsPanel;
+  
     public GameObject optionsPanel; 
 
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
-    //public Text nameText;
-    //public Text dialogueText;
-
+    
     public float textSpeed;
-    //private int index;
-
-
+    
     public Animator animator;
 
     private Queue<string> sentences;// queue for storing dialog sentences
@@ -45,10 +41,8 @@ public class DialogueManger : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         
-
-
         animator.SetBool("IsOpen",true);
-      // index = 0;
+      
         //Debug.Log("Starting conversation with" + dialogue.name);
 
         nameText.text = dialogue.characterName;
@@ -61,7 +55,7 @@ public class DialogueManger : MonoBehaviour
             sentences.Enqueue(sentence);
         }
 
-       // Debug.Log("there.");
+       Debug.Log("there");
         DisplayNextSentence();
     }
 
@@ -70,9 +64,6 @@ public class DialogueManger : MonoBehaviour
     {
         if (sentences.Count == 0) 
         {
-          //  ShowOptions();
-
-           // Debug.Log("here.");
             EndDialogue();//if the dialog sentence queue is empty, end the dialog
             return;
             
