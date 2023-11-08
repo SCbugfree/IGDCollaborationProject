@@ -9,7 +9,12 @@ using UnityEngine;
 
 public class Dialogue
 {
-    public string name;
+
+    public string characterName;
+  //  public DialogueOption[] options;
+
+
+    //public string name;
 
 
     [TextArea(3,10)]//minimum and maximum number of lines used for text
