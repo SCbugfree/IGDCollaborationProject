@@ -39,7 +39,7 @@ public class BattleSystem : MonoBehaviour
         dialogueText.text = "Mommy and her daughter approaches!";
 
         yield return new WaitForSeconds(2f);
-        
+
         state = BattleState.PLAYERTURN;
         PlayerTurn();
     }
