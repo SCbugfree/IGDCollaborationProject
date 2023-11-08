@@ -11,7 +11,8 @@ public class TextControl : MonoBehaviour
     private float typeTime; //store time of typing each character
     private int charIndex; //track the index of character in a string
     private float timer;
-    public float minWidth = 50f;
+    public float minWidth = 0.001f;
+    private float leftEnd;
     SpriteRenderer panelRender; 
 
     public void TypingText(TMP_Text dialogueText, string textContent, float typeTime)
@@ -41,10 +42,11 @@ public class TextControl : MonoBehaviour
                 dialogueText.text = textContent.Substring(0, charIndex); //extract character of the text
 
                 int textLength = dialogueText.text.Length; //record text length
-                float newWidth = Mathf.Max(minWidth, textLength * 1f);
+                float newWidth = Mathf.Max(minWidth, textLength * 5f);
                 var newScale = panelRender.transform.localScale;
-                newScale.x *= newWidth;
+                newScale.x = newWidth;
                 panelRender.transform.localScale = newScale;
+
 
                 if (charIndex >= textContent.Length) //if entire string has been displayed
                 {

@@ -24,6 +24,8 @@ public class TextDisplay : MonoBehaviour
     {
         //controlling the text being typed
         textControl.TypingText(dialogue,Question1, 0.2f);
+        //textControl.TypingText(dialogue, Question2, 0.2f);
+        //textControl.TypingText(dialogue, Question3, 0.2f);
     }
 
     void Update()
