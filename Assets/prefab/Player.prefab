@@ -130,6 +130,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitName: Player
-  damage: 0
+  damage: 10
   maxHP: 80
   currentHP: 80

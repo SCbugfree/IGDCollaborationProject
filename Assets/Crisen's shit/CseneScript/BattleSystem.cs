@@ -19,6 +19,7 @@ public class BattleSystem : MonoBehaviour
     Unit enemyUnit;
 
     public TMP_Text dialogueText;
+    public TMP_Text HPText;
 
     public BattleState state;
     // Start is called before the first frame update
@@ -54,8 +55,14 @@ public class BattleSystem : MonoBehaviour
         dialogueText.text = "[Your bragging successfully worked. You can see mommy's face turning red.]";
         yield return new WaitForSeconds(3f);
 
-        dialogueText.text = "[Mommy - 10 HP.]";
+        HPText.text = enemyUnit.unitName + "'s HP - " + enemyUnit.takeDamage;
         yield return new WaitForSeconds(2f);
+
+        HPText.text = enemyUnit.unitName + "'s current HP is " + (enemyUnit.currentHP) + ", " + playerUnit.unitName + "'s current HP is " + (playerUnit.currentHP) + ".";
+        yield return new WaitForSeconds(3f);
+
+        //dialogueText.text = "[Mommy - 10 HP.]";
+        //yield return new WaitForSeconds(2f);
 
         if (isLose)
         {
