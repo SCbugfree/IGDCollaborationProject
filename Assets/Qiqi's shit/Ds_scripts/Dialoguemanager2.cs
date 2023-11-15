@@ -44,6 +44,11 @@ public class Dialoguemanager2 : MonoBehaviour
 
     //private const string LAYOUT_TAG = "layout";
 
+    //Added by Sally
+    //Temporary
+    [SerializeField]
+    private GameObject buttonTemp;
+
 
     private void Awake()
     {
@@ -108,6 +113,10 @@ public class Dialoguemanager2 : MonoBehaviour
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
         dialogueText.text = "";
+
+        //Added by Sally
+        //Temporary
+        ShowTempButton(dialogueIsPlaying);
     }
 
     private void ContinueStory()
@@ -257,6 +266,11 @@ public class Dialoguemanager2 : MonoBehaviour
             currentStory.ChooseChoiceIndex(choiceIndex);
             ContinueStory();
         }
+    }
+
+    private void ShowTempButton(bool dialogueIsPlaying)
+    {
+        buttonTemp.SetActive(!dialogueIsPlaying);
     }
 
 }
