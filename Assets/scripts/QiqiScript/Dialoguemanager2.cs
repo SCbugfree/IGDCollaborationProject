@@ -158,7 +158,9 @@ public class Dialoguemanager2 : MonoBehaviour
         foreach (char letter in line.ToCharArray())
         {
             //if the submit button is pressed, finish up diaplaying the line right away
+
             if (Input.GetMouseButtonDown(0))
+            //if(Input.GetKeyDown(KeyCode.Space))
             {
                 Debug.Log("Mouse Left Clicked!");
                 dialogueText.text = line;
@@ -268,6 +270,8 @@ public class Dialoguemanager2 : MonoBehaviour
         }
     }
 
+    //Added by Sally
+    //Temporary usage
     private void ShowTempButton(bool dialogueIsPlaying)
     {
         buttonTemp.SetActive(!dialogueIsPlaying);

@@ -84,7 +84,9 @@ public class BattleSystem : MonoBehaviour
         }
         else
         {
-            dialogueText.enabled = false;
+            //Edited by Sally
+            //Disable the following line to stop text glitching
+            //dialogueText.enabled = false;
         }
     }
 
