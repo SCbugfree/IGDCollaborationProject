@@ -6,9 +6,11 @@ public class Unit : MonoBehaviour
 {
     public string unitName;
     public string takeDamage;
+    //public string healing;
     //public int unitLevel;
 
     public int damage;
+    //public int heal;
 
     public int maxHP;
     public int currentHP;
@@ -26,4 +28,5 @@ public class Unit : MonoBehaviour
             return false;
         }
     }
+
 }

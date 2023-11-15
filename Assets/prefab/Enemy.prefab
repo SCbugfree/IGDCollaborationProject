@@ -46,9 +46,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitName: Enemy
+  takeDamage: 
   damage: 10
-  maxHP: 80
-  currentHP: 80
+  maxHP: 40
+  currentHP: 40
 --- !u!1 &1440186545202124776
 GameObject:
   m_ObjectHideFlags: 0

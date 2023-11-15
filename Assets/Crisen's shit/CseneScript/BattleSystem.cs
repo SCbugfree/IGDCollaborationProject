@@ -21,12 +21,71 @@ public class BattleSystem : MonoBehaviour
     public TMP_Text dialogueText;
     public TMP_Text HPText;
 
+    private List<string> dialogues;
+
+    private bool processing = false;
+
+    /*private int LinesCount
+    {
+        get
+        {
+            return linesCount;
+        }
+        set
+        {
+            linesCount = value;
+        }
+    }
+
+    private int linesCount;
+
+    private string CurrentLines
+    {
+        get
+        {
+            return currentLines;
+        }
+        set
+        {
+            currentLines = value;
+        }
+    }
+
+    private string currentLines;
+
+    [SerializeField]
+    private DiaManager diaManager;*/
+
     public BattleState state;
+
+
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         state = BattleState.START;
         StartCoroutine(SetupBattle());
+        //CurrentLines = lines[LinesCount];
+        //linesCount = lines.Count;
+    }
+
+    /*string Linesmanage.UpdateDialogues()
+    {
+        LinesCount++;
+        CurrentLines = lines[LinesCount];
+        CurrentLines = CurrentLines.Substring(1);
+        return CurrentLines;
+    }*/
+
+    private void Update()
+    {
+        if (Input.GetMouseButton(0))
+        {
+            dialogueText.enabled = true;
+        }
+        else
+        {
+            dialogueText.enabled = false;
+        }
     }
 
     IEnumerator SetupBattle()
@@ -36,6 +95,7 @@ public class BattleSystem : MonoBehaviour
 
         GameObject enemyFight = Instantiate(enemyPrefab, enemyBattleStation);
         enemyUnit = enemyFight.GetComponent<Unit>();
+
 
         dialogueText.text = "Mommy and her daughter approaches!";
 
@@ -48,6 +108,7 @@ public class BattleSystem : MonoBehaviour
     IEnumerator PlayerBrag()
     {
         bool isLose = enemyUnit.TakeDamage(playerUnit.damage);
+        Debug.Log("Health minus");
 
         dialogueText.text = "You: My daughter got 3 A+ out of 4 last semester, have I talked you about this?";
         yield return new WaitForSeconds(3f);
@@ -55,14 +116,15 @@ public class BattleSystem : MonoBehaviour
         dialogueText.text = "[Your bragging successfully worked. You can see mommy's face turning red.]";
         yield return new WaitForSeconds(3f);
 
-        HPText.text = enemyUnit.unitName + "'s HP - " + enemyUnit.takeDamage;
-        yield return new WaitForSeconds(2f);
 
-        HPText.text = enemyUnit.unitName + "'s current HP is " + (enemyUnit.currentHP) + ", " + playerUnit.unitName + "'s current HP is " + (playerUnit.currentHP) + ".";
-        yield return new WaitForSeconds(3f);
-
-        //dialogueText.text = "[Mommy - 10 HP.]";
+        //HPText.text = enemyUnit.unitName + "'s HP - " + enemyUnit.takeDamage;
         //yield return new WaitForSeconds(2f);
+
+        //HPText.text = enemyUnit.unitName + "'s current HP is " + (enemyUnit.currentHP) + ", " + playerUnit.unitName + "'s current HP is " + (playerUnit.currentHP) + ".";
+        //yield return new WaitForSeconds(3f);
+
+        dialogueText.text = "[Mommy - 10 HP.]";
+        yield return new WaitForSeconds(2f);
 
         if (isLose)
         {
