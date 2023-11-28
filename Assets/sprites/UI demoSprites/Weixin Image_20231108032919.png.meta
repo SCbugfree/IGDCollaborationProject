@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5ca18106264079842976eb2d77ac6254
+guid: a6510b433b279154782b06fa81f58fa6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -101,17 +101,29 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_3410_0
+      name: Weixin Image_20231108032919_0
       rect:
         serializedVersion: 2
-        x: 904
-        y: 1510
-        width: 955
-        height: 193
+        x: 135
+        y: 1585
+        width: 127
+        height: 204
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2a4f5eef00b7924ea796b3541adff44
-      internalID: -396938065
+      spriteID: 6f92df2a80b06af4690912c417b6f4a2
+      internalID: -182944967
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_3410_1
+      name: Weixin Image_20231108032919_1
       rect:
         serializedVersion: 2
-        x: 1464
-        y: 1123
-        width: 111
-        height: 140
+        x: 520
+        y: 912
+        width: 533
+        height: 985
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7334d3ff2c6e9043888348d04f46d3c
-      internalID: -1905534338
+      spriteID: c5510932013ede24293c08f569d21233
+      internalID: -1036368112
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_3410_2
+      name: Weixin Image_20231108032919_2
       rect:
         serializedVersion: 2
-        x: 76
-        y: 89
-        width: 1836
-        height: 752
+        x: 1269
+        y: 939
+        width: 533
+        height: 938
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,8 +173,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34adb13d2ce360f4fb7081ba5331c5b5
-      internalID: -260891533
+      spriteID: 33e1af2e987f33d4f8e2d604075f2828
+      internalID: 265753605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weixin Image_20231108032919_3
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 64
+        width: 1869
+        height: 824
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f28b214d1877b94b8451a4acac569e4
+      internalID: -929066246
       vertices: []
       indices: 
       edges: []
@@ -178,9 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      IMG_3410_0: -396938065
-      IMG_3410_1: -1905534338
-      IMG_3410_2: -260891533
+      Weixin Image_20231108032919_0: -182944967
+      Weixin Image_20231108032919_1: -1036368112
+      Weixin Image_20231108032919_2: 265753605
+      Weixin Image_20231108032919_3: -929066246
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

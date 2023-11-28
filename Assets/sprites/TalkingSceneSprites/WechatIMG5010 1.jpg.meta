@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a6510b433b279154782b06fa81f58fa6
+guid: ad32d14a5fc7946f1b2a7ce5f677435c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 170
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -71,6 +71,18 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -105,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Weixin Image_20231108032919_0
+      name: WechatIMG5010 1_0
       rect:
         serializedVersion: 2
-        x: 135
-        y: 1585
-        width: 127
-        height: 204
+        x: 106
+        y: 623
+        width: 250
+        height: 191
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f92df2a80b06af4690912c417b6f4a2
-      internalID: -182944967
+      spriteID: 8ef07733cb29e4728be8bf6d5928bf10
+      internalID: 387763513
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weixin Image_20231108032919_1
+      name: WechatIMG5010 1_1
       rect:
         serializedVersion: 2
-        x: 520
-        y: 912
-        width: 533
-        height: 985
+        x: 553
+        y: 649
+        width: 92
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5510932013ede24293c08f569d21233
-      internalID: -1036368112
+      spriteID: a1e56222dc6e942adacaca6b264e5632
+      internalID: -1437118908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weixin Image_20231108032919_2
+      name: WechatIMG5010 1_2
       rect:
         serializedVersion: 2
-        x: 1269
-        y: 939
-        width: 533
-        height: 938
+        x: 98
+        y: 417
+        width: 1477
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33e1af2e987f33d4f8e2d604075f2828
-      internalID: 265753605
+      spriteID: 2730375e93d4e42ecbf3ff57df5cbafb
+      internalID: 1423135506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weixin Image_20231108032919_3
+      name: WechatIMG5010 1_3
       rect:
         serializedVersion: 2
-        x: 115
-        y: 64
-        width: 1869
-        height: 824
+        x: 56
+        y: 47
+        width: 1579
+        height: 264
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f28b214d1877b94b8451a4acac569e4
-      internalID: -929066246
+      spriteID: 4f06e491b7e6e46e9a364073d0dda851
+      internalID: 670578303
       vertices: []
       indices: 
       edges: []
@@ -199,10 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Weixin Image_20231108032919_0: -182944967
-      Weixin Image_20231108032919_1: -1036368112
-      Weixin Image_20231108032919_2: 265753605
-      Weixin Image_20231108032919_3: -929066246
+      WechatIMG5010 1_0: 387763513
+      WechatIMG5010 1_1: -1437118908
+      WechatIMG5010 1_2: 1423135506
+      WechatIMG5010 1_3: 670578303
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
