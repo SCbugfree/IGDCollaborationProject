@@ -233,6 +233,12 @@ public class DialogueManagerScript : MonoBehaviour
             speaker = GameObject.FindWithTag(tag);
             TagName = tag;
             speakerName.text = speaker.name;
+
+            //Disable name panel when narrator is speaking
+            if (TagName.Equals("Narrator"))
+            {
+                namePanel.SetActive(false);
+            }
         }
     }
 
