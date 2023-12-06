@@ -1,4 +1,4 @@
-﻿//This is the file storing dialogues in Scene5: Inside Jade's Manor
+﻿//This is the file storing dialogues in Scene5: In the Archives
 // !Narrator @Player #Amelia/Daughter, %Jade/Mommy 1, ^: Mommy 2, &: NPC/No image
 
 %And this is…the library. #Jade
