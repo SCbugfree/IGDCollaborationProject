@@ -54,7 +54,7 @@
 
 %Hmm… That would be pleasurable, but I have a parent-teacher conference with my daughter over there later this afternoon. #Jade
 
-!She points to an eclectic blue-haired teen in the anime section, seemingly debating between a Devil Killer or Battle on Giant shirt. #Lilith
+!She points to an gothic silver-haired teen in the anime section, seemingly debating between a Devil Killer or Battle on Giant shirt. #Lilith
 
 @My daughter, Amelia, is the one over there, staring at the vinyls. Maybe they could be friends! We just moved to town, so she hasn’t met any friends yet. #Amelia
 
