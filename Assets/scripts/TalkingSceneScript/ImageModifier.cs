@@ -18,10 +18,12 @@ public class ImageModifier : MonoBehaviour
 
     private void Update()
     {
+        /*
         if (npcImage != null)
         {
             npcImage.SetNativeSize();
         }
+        */
 
         sprMod = dms.sprModifier; //testing
         tagCheck = dms.TagName;
