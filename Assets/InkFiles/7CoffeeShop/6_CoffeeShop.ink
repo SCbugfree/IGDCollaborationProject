@@ -79,7 +79,7 @@
 
 !Madi sets our drinks down at our table and I immediately take a sip. #Narrator
 
-@Hi! We’re new in the neighborhood! I’m Amelia and this is my Mom, [INSERT PLAYER NAME]! #Amelia
+@Hi! We’re new in the neighborhood! I’m Amelia and this is my Mom! #Amelia
 
 ^Oh right on! Pleased to meet you both! #Madi
 

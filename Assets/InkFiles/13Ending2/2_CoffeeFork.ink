@@ -31,7 +31,7 @@
 
 !STOP TALKING. CLOSE YOUR MOUTH. #Narrator
 
-^Thank you, [INSERT PLAYER NAME]. I owe you big time. #Madi
+^Thank you. I owe you big time. #Madi
 
 !I return to the seating area, settling back into my seat and watching the show start. The house is packed now, with a few people even standing outside to watch. What have I gotten myself into? #Narrator
 
@@ -61,7 +61,7 @@
 
 ^Everybody, we’re down to the last act of the night. #Madi
 
-^Now this person, who is my friend, is making their first live stage appearance. Please welcome, [INSERT PLAYER NAME]! #Madi
+^Now this person, who is my friend, is making their first live stage appearance. Please welcome, Ska Revived! #Madi
 
 !Everyone cheers as I take the stage. #Narrator
 

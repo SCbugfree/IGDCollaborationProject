@@ -25,7 +25,7 @@
 -> CHOICEMADE
 
 == CHOICEMADE ==
-^I get to take you to your first concert in a long time? This is gonna be awesome! Just hang with me, [INSERT PLAYER NAME], and you’ll be good. This scene is super supportive. It’ll be a blast. #Madi
+^I get to take you to your first concert in a long time? This is gonna be awesome! Just hang with me, and you’ll be good. This scene is super supportive. It’ll be a blast. #Madi
 
 @Quick question? #Player
 

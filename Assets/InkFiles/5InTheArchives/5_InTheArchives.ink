@@ -22,7 +22,7 @@
 ->CHOICEMADE
 
 == Neutral ==
-%You know [INSERT PLAYER NAME], in the Victorian era there was some controversy surrounding reading. Many people thought the more tawdry novels would encourage youths into a life of crime and would cause too much of a distraction from work and school. #Jade
+%You know, in the Victorian era there was some controversy surrounding reading. Many people thought the more tawdry novels would encourage youths into a life of crime and would cause too much of a distraction from work and school. #Jade
 ->CHOICEMADE
 
 == CHOICEMADE ==
@@ -100,7 +100,7 @@
 
 %But I think it takes a critical mind to truly appreciate something to the fullest – to be cognizant of its flaws and love it all the same. #Jade
 
-%Tell me, [INSERT PLAYER NAME], do you have any hobbies? #Jade
+%Tell me, do you have any hobbies? #Jade
 
 !Quick, sound sophisticated! #Narrator
 

@@ -7,7 +7,7 @@
 
 !Silence. An oil lamp in the corner flickers dimly, casting ominous shadows against the wall. Why do I feel like all the people in these paintings are staring straight at me? Why is it so cold? Where's Jade? #Narrator
 
-%[INSERT PLAYER NAME], pleasure to have you in my home. #Jade
+%Pleasure to have you in my home. #Jade
 
 !I look up and see Jade standing at the top of a majestic staircase with a walking candle holder. #Narrator
 

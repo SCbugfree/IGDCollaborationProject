@@ -22,7 +22,7 @@
 
 !She points up to the exact same band shirt I was looking at. #Narrator
 
-@I’m [INSERT PLAYER NAME]. Wow, your daughter has good taste! My Synthetic Love rocks. #Player
+@Wow, your daughter has good taste! My Synthetic Love rocks. #Player
 
 %I am quite enamored with their music as well… What’s the song you would deem your favorite? #Jade
 
