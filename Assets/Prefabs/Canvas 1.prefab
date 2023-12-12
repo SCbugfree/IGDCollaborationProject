@@ -370,7 +370,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: HairColorPicker
         m_Mode: 1
@@ -503,7 +503,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: SkinColorPicker
         m_Mode: 1
@@ -636,7 +636,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -769,7 +769,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: SkinColorPicker
         m_Mode: 1
@@ -1000,7 +1000,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: ChangeSprites
         m_Mode: 1
@@ -1148,7 +1148,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -1551,7 +1551,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -1917,7 +1917,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: ChangeSprites
         m_Mode: 1
@@ -2065,7 +2065,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -2221,7 +2221,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c0202b7cd376f4438a471176fa5d004f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b3e46869267f94469a3d6ebe0a014705, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2403,7 +2403,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -2749,7 +2749,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -3561,7 +3561,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -3867,7 +3867,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -4391,7 +4391,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: ChangeSprites
         m_Mode: 1
@@ -4660,7 +4660,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -4793,7 +4793,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -4926,7 +4926,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -5406,7 +5406,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -5637,7 +5637,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: ChangeSprites
         m_Mode: 1
@@ -5785,7 +5785,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -5955,7 +5955,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -6186,7 +6186,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: ChangeSprites
         m_Mode: 1
@@ -6469,7 +6469,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -6602,7 +6602,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -6735,7 +6735,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -6868,7 +6868,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -7199,7 +7199,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -7332,7 +7332,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -7542,7 +7542,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -7621,7 +7621,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3730824cdad0f4a488ec24d926ba406e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a92990a21a50c4ca5ac6e927ccc6afc8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7925,7 +7925,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -8150,7 +8150,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -8418,7 +8418,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -8686,7 +8686,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -8972,7 +8972,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -9261,7 +9261,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -9492,7 +9492,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: ChangeSprites
         m_Mode: 1
@@ -9640,7 +9640,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -9773,7 +9773,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -10294,7 +10294,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -10525,7 +10525,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: ChangeSprites
         m_Mode: 1
@@ -10750,7 +10750,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: HairColorPicker
         m_Mode: 1
@@ -10883,7 +10883,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: HairColorPicker
         m_Mode: 1
@@ -11016,7 +11016,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: SkinColorPicker
         m_Mode: 1
@@ -11037,7 +11037,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3355847983705031394}
-  - component: {fileID: 3355847983705031395}
+  - component: {fileID: 1544625924}
   m_Layer: 0
   m_Name: Customization
   m_TagString: Untagged
@@ -11060,7 +11060,7 @@ Transform:
   m_Father: {fileID: 1183079465714554365}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3355847983705031395
+--- !u!114 &1544625924
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11069,7 +11069,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3355847983705031388}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9319de13ffe604813acaa607ced5e20d, type: 3}
+  m_Script: {fileID: 11500000, guid: 304ea24d182f74e11a48ef04fe66e985, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_body: {fileID: 0}
@@ -11081,105 +11081,100 @@ MonoBehaviour:
   m_mouth: {fileID: 0}
   m_clothing: {fileID: 0}
   body_sprites:
-  - {fileID: 21300000, guid: 1699ba435f12144818b4871b78bc8c02, type: 3}
-  - {fileID: 21300000, guid: a01bd7001108547fdba0b78ecc51911b, type: 3}
-  - {fileID: 21300000, guid: 4ba9d6c1b7ffa46b78b5f29371804678, type: 3}
-  - {fileID: 21300000, guid: 6e2f44a5eb5b04c479cb8cc952a0cd4e, type: 3}
-  underwear_sprites:
-  - {fileID: 21300000, guid: 6df457cc698b24b01a4d5dac4e61d620, type: 3}
-  - {fileID: 21300000, guid: 38130a159a5934bfda108db468857b04, type: 3}
-  - {fileID: 21300000, guid: ca7929e3532ef43239a290a29dc80971, type: 3}
-  - {fileID: 21300000, guid: 08fd135d477ca4ca4a8e906d2f852939, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   head_sprites:
-  - {fileID: 21300000, guid: 921c2b56bb6ab4ffe876f1a89f253aee, type: 3}
-  - {fileID: 21300000, guid: 1816308b5f8ff498db93b8fc5291195f, type: 3}
-  - {fileID: 21300000, guid: adb010b70000241d58116b0a3ebe38c0, type: 3}
-  - {fileID: 21300000, guid: e17909d910db740b19114d7760b25205, type: 3}
-  - {fileID: 21300000, guid: 106b24f6ab2b54724982d1923cc5e1d0, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   eyes_sprites:
-  - {fileID: 21300000, guid: 1bd26b5dc5501490ba36b8e86e529b63, type: 3}
-  - {fileID: 21300000, guid: 6b4caf1f322d3436e8e5c7700d05365c, type: 3}
-  - {fileID: 21300000, guid: 5a9b91465c5f742b5bc435110f0cc18c, type: 3}
-  - {fileID: 21300000, guid: 6b5535fd8d9544dcd984d31f1ae734cb, type: 3}
-  - {fileID: 21300000, guid: 7eb9bdc8624f84167be61a1b7deb6754, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   brows_sprites:
-  - {fileID: 21300000, guid: de9c9a56f52c84e93ae9678c2d8d574e, type: 3}
-  - {fileID: 21300000, guid: 06a9e9519acb24cf08a4eabfaad50cf1, type: 3}
-  - {fileID: 21300000, guid: bdce9d4600f0d471b9731b7bb140a19f, type: 3}
-  - {fileID: 21300000, guid: fb270c3997cc5444cb2e3f4586f61a3c, type: 3}
-  - {fileID: 21300000, guid: bf3c1517b851049098bfe79e6d74a5f0, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   nose_sprites:
-  - {fileID: 21300000, guid: 59f2966dbbda848838cd739a68c4764b, type: 3}
-  - {fileID: 21300000, guid: 824dfd3ee07144594939ba846e89870b, type: 3}
-  - {fileID: 21300000, guid: 714ecb6f9e06949519d162dc8c15c9c2, type: 3}
-  - {fileID: 21300000, guid: 44f807773f07e49d6ac17a2ee1093922, type: 3}
-  - {fileID: 21300000, guid: e1f61282566034ff786b384c901b4869, type: 3}
-  - {fileID: 21300000, guid: c37970c40bfa848ca83b3012276a22b4, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   mouth_sprites:
-  - {fileID: 21300000, guid: 8c8aee357573d46a8a8ff32d97f855fa, type: 3}
-  - {fileID: 21300000, guid: ef4aadbbfbdf9480199e3d2d15be72aa, type: 3}
-  - {fileID: 21300000, guid: a751f8b0d36724b16b72e1b33e750e11, type: 3}
-  - {fileID: 21300000, guid: 3427cb3d8e63e47c59be179139c1f6fc, type: 3}
-  - {fileID: 21300000, guid: acc510f8e34024a58b17034b05145a7b, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   h1_hair_sprites:
-  - {fileID: 21300000, guid: e52c19a20b8484e6393f11800a3ee04e, type: 3}
-  - {fileID: 21300000, guid: 6ff4798f8367f4b2ca334b3f8f2a3247, type: 3}
-  - {fileID: 21300000, guid: ac4b689b37c074537b864ba2d46543f4, type: 3}
-  - {fileID: 21300000, guid: 4b6ab5620cf8844fca389715ed9d5bfa, type: 3}
-  - {fileID: 21300000, guid: 242967d8716a24b709e1477e17b7e884, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   h2_hair_sprites:
-  - {fileID: 21300000, guid: b4bd14b8bc37f435da3f92df68337bd6, type: 3}
-  - {fileID: 21300000, guid: b0747641db78f4dcebc0d318c3a8949e, type: 3}
-  - {fileID: 21300000, guid: b28e01bc979ca4d50897df2ecc795267, type: 3}
-  - {fileID: 21300000, guid: f2dd58345afd64348b16094ef9a76439, type: 3}
-  - {fileID: 21300000, guid: c9354dfc033a240ca8743dbe623d32ff, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   h3_hair_sprites:
-  - {fileID: 21300000, guid: 0648242035d13483883746492a062058, type: 3}
-  - {fileID: 21300000, guid: e519f6a584f8b4edbbdacff5452f85f3, type: 3}
-  - {fileID: 21300000, guid: 31cc4fb7da3624c67a359b9333cc7d75, type: 3}
-  - {fileID: 21300000, guid: c46c932b43a284bb5ad8025a7ae7eea5, type: 3}
-  - {fileID: 21300000, guid: 295ac131e982e4789b11218ca9b60db0, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   h4_hair_sprites:
-  - {fileID: 21300000, guid: 29a50d331637048cdaaa85f64aa536e9, type: 3}
-  - {fileID: 21300000, guid: 6b95ec0c7c4ed47c5887f83d70891556, type: 3}
-  - {fileID: 21300000, guid: f23a69772396148a59e857beff93fde3, type: 3}
-  - {fileID: 21300000, guid: 6daa73aa71c294b5591a4ae632f46d6e, type: 3}
-  - {fileID: 21300000, guid: 1e37bdbc07bd64fae89411c4afc9edd5, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   h5_hair_sprites:
-  - {fileID: 21300000, guid: a46ece4043e1a43bf9e7563b6f29efa9, type: 3}
-  - {fileID: 21300000, guid: 041377852fcce4e3ba319284729c02a1, type: 3}
-  - {fileID: 21300000, guid: 063f075fc237e4a5ea626f43ce268ced, type: 3}
-  - {fileID: 21300000, guid: d779ff98148d340feadd77c33b209de7, type: 3}
-  - {fileID: 21300000, guid: 343a35bc421f94225bdb9e1a024a208b, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   b1_clothing_sprites:
-  - {fileID: 21300000, guid: 58d1488721ba248bcbf915f18b658710, type: 3}
-  - {fileID: 21300000, guid: d614953461ce9440d9fa185ffaa832c5, type: 3}
-  - {fileID: 21300000, guid: f725a2f9a13104848beae3cd3eb9be50, type: 3}
-  - {fileID: 21300000, guid: ee13373c4d51648f6bccb719e162f1f9, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   b2_clothing_sprites:
-  - {fileID: 21300000, guid: b7d0754fc9b664374a3e52ede9763333, type: 3}
-  - {fileID: 21300000, guid: e9c97771af4974dddbedf20333ec1624, type: 3}
-  - {fileID: 21300000, guid: a167b3c4e23084448b151ebcb6c40a62, type: 3}
-  - {fileID: 21300000, guid: ea112bb65373240df9b8bfe59565e748, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   b3_clothing_sprites:
-  - {fileID: 21300000, guid: 9f85527ea860443b3b75a325c9fb2215, type: 3}
-  - {fileID: 21300000, guid: 435d5d206254c459a80c054184446779, type: 3}
-  - {fileID: 21300000, guid: 8da0dc70e764f462e8d28c9103238f69, type: 3}
-  - {fileID: 21300000, guid: 0b3d91c42323848fdbb5511a8a1f3161, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   b4_clothing_sprites:
-  - {fileID: 21300000, guid: a39d1251ba3c04bfba2740706264b12a, type: 3}
-  - {fileID: 21300000, guid: 888b4655792794bee8ee7f410c30597e, type: 3}
-  - {fileID: 21300000, guid: 5bd6b338ba27743c29392e49b6e70e0f, type: 3}
-  - {fileID: 21300000, guid: 55b5ee55a6eaf480ab1c69ff816d3dbb, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   boards:
   - {fileID: 1183079464015846087}
   - {fileID: 193931742348375539}
   - {fileID: 1183079465061001782}
   - {fileID: 1183079465347827192}
+  - {fileID: 1183079464396816556}
   - {fileID: 1183079465458180429}
   - {fileID: 1183079464285107363}
   - {fileID: 1183079464757484435}
-  - {fileID: 1183079464396816556}
   colorButton: {fileID: 0}
   boardButton: {fileID: 0}
   chooseButton: {fileID: 0}
@@ -11616,7 +11611,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: ChangeSprites
         m_Mode: 1
@@ -11808,7 +11803,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: HairColorPicker
         m_Mode: 1
@@ -11941,7 +11936,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: HairColorPicker
         m_Mode: 1
@@ -12074,7 +12069,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: SkinColorPicker
         m_Mode: 1
@@ -12207,7 +12202,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: HairColorPicker
         m_Mode: 1
@@ -12340,7 +12335,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: HairColorPicker
         m_Mode: 1
@@ -12473,7 +12468,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: HairColorPicker
         m_Mode: 1
@@ -12606,7 +12601,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -12739,7 +12734,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: HairColorPicker
         m_Mode: 1
@@ -12872,7 +12867,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: HairColorPicker
         m_Mode: 1
@@ -13051,7 +13046,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: SkinColorPicker
         m_Mode: 1
@@ -13197,7 +13192,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -13351,7 +13346,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: SkinColorPicker
         m_Mode: 1
@@ -13484,7 +13479,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3
@@ -13695,7 +13690,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3355847983705031395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomizationScript, Assembly-CSharp
         m_MethodName: PassIndex
         m_Mode: 3

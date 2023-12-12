@@ -14,8 +14,11 @@ public class GameManager : MonoBehaviour
 
     private Transform canvas;
     public Transform mummyPos;
-    public GameManager MummyPrefab;
     public GameObject mummy_instance;
+    public GameObject MummyPrefab;
+
+    //public GameManager mummy_instance;
+    //private GameManager MummyPrefab;
 
     [Header("Mummy Profile")]
 
@@ -93,11 +96,14 @@ public class GameManager : MonoBehaviour
     // Load and instantiate Mummy Prefab
     private void LoadMummyPrefab(Transform canvas, Transform mummyPos)
     {
-        MummyPrefab = Resources.Load("Mummy") as GameManager;
-        mummy_instance = (GameObject) PrefabUtility.InstantiatePrefab(MummyPrefab);
-        mummy_instance.transform.SetParent(canvas);
-        //mummy_instance = Instantiate(MummyPrefab, canvas);
+        MummyPrefab = Resources.Load("Mummy") as GameObject;
+        mummy_instance = Instantiate(MummyPrefab, canvas);
         mummy_instance.transform.position = mummyPos.position;
+
+        //mummy_instance = (GameManager) PrefabUtility.InstantiatePrefab(MummyPrefab);
+        //mummy_instance.gameObject.transform.SetParent(canvas);
+        //mummy_instance.gameObject.transform.position = mummyPos.position;
+        //var m_i = mummy_instance.gameObject;
     }
 
 
