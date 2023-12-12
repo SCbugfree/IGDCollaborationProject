@@ -89,8 +89,8 @@ public class CustomizationScript : MonoBehaviour
     public int buttonIndex; // store the index of the button selected
     public int sprIndex; // store the index in the sprite array
     public Sprite[] currentArray; // store the current array from which choices are made
-    public Sprite[] hairTemp;
-    public Sprite[] clothingTemp;
+    public Sprite[] hairTemp; // index of head determines array hairTemp
+    public Sprite[] clothingTemp; // index of body determines array clothingTemp
 
     [SerializeField] GameObject mummyInstance;
     [SerializeField] Image[] mummyComponents;
@@ -101,6 +101,8 @@ public class CustomizationScript : MonoBehaviour
     void Start()
     {
         FindMummyInstance();
+        currentArray = body_sprites;
+        targetMummyComponent = m_body;
     }
 
 
@@ -243,7 +245,7 @@ public class CustomizationScript : MonoBehaviour
     }
 
 
-    // Match sprites
+    // Match sprites automatically
     public void MatchSprites()
     {
         // If head and hair sprites are shown
@@ -281,9 +283,26 @@ public class CustomizationScript : MonoBehaviour
         // If body and clothing sprites are shown
         if (m_body.sprite != null && m_clothing.sprite != null)
         {
-            int index = Array.IndexOf(body_sprites, m_body.sprite);
-            string arrayName = "b" + (index + 1) + "_clothing_sprites";
-            clothingTemp = FindArrayByName(arrayName);
+            int body_index = Array.IndexOf(body_sprites, m_body.sprite);
+
+            switch (body_index)
+            {
+                case 0:
+                    clothingTemp = b1_clothing_sprites;
+                    break;
+
+                case 1:
+                    clothingTemp = b2_clothing_sprites;
+                    break;
+
+                case 2:
+                    clothingTemp = b3_clothing_sprites;
+                    break;
+
+                case 3:
+                    clothingTemp = b4_clothing_sprites;
+                    break;
+            }
         }
     }
 
