@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SallyScene.unity
     guid: 4da7d2d952ea6436cb677fa7619af78a
   - enabled: 1
+    path: Assets/Scenes/CustomizationScene.unity
+    guid: b6741ee40e0404eff8a7d4c599efe642
+  - enabled: 1
     path: Assets/Scenes/TalkingScene.unity
     guid: 5d146e0f3657b4e76a346471cd898186
   m_configObjects: {}
