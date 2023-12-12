@@ -11,16 +11,27 @@ public class CustomizationScript : MonoBehaviour
 {
     [Header("Mummy Objects")]
 
-    public Image m_body;
-    public Image m_head;
-    public Image m_eyes;
-    public Image m_brows;
-    public Image m_nose;
-    public Image m_hair;
-    public Image m_mouth;
-    public Image m_clothing;
+
+    [SerializeField] private Image m_body;
+
+    [SerializeField] private Image m_head;
+
+    [SerializeField] private Image m_eyes;
+
+    [SerializeField] private Image m_brows;
+
+    [SerializeField] private Image m_nose;
+
+    [SerializeField] private Image m_hair;
+
+    [SerializeField] private Image m_mouth;
+
+    [SerializeField] private Image m_clothing;
+
+
 
     [Header("Sprite Arrays")]
+
 
     [SerializeField]
     private Sprite[] body_sprites;
@@ -68,34 +79,60 @@ public class CustomizationScript : MonoBehaviour
     private Sprite[] b4_clothing_sprites;
 
 
+
+
     [Header("Boards")]
+
 
     [SerializeField] private GameObject[] boards;
 
 
+
+
     [Header("Buttons")]
 
+
     [SerializeField] private GameObject colorButton; // store the button clicked to change color
+
     [SerializeField] private GameObject boardButton; // store the button show or hide a board
+
     [SerializeField] private GameObject chooseButton; // store the button clicked to change Mummy object components
+
+
 
 
     [Header("Temp data")]
 
-    public Color buttonColor; // store color of selected button
-    public Color chosenColor; // store color that will be applied
-    public GameObject buttonComponent; // store the choice button selected
-    public Image targetMummyComponent;
-    public int buttonIndex; // store the index of the button selected
-    public int sprIndex; // store the index in the sprite array
-    public Sprite[] currentArray; // store the current array from which choices are made
-    public Sprite[] hairTemp; // index of head determines array hairTemp
-    public Sprite[] clothingTemp; // index of body determines array clothingTemp
+
+    [SerializeField] private Color buttonColor; // store color of selected button
+
+    [SerializeField] private Color chosenColor; // store color that will be applied
+
+    [SerializeField] private GameObject buttonComponent; // store the choice button selected
+
+    [SerializeField] private Image targetMummyComponent;
+
+    [SerializeField] private int buttonIndex; // store the index of the button selected
+
+    [SerializeField] private int sprIndex; // store the index in the sprite array
+
+    [SerializeField] private Sprite[] currentArray; // store the current array from which choices are made
+
+    [SerializeField] private Sprite[] hairTemp; // index of head determines array hairTemp
+
+    [SerializeField] private Sprite[] clothingTemp; // index of body determines array clothingTemp
+
+    [SerializeField] private int cHair_index = 0; // store current sprite index of hair sprite in hair array
+
+    [SerializeField] private int cClothing_index = 0; // store current sprite index of clothing sprite in clothing array
 
     [SerializeField] GameObject mummyInstance;
+
     [SerializeField] Image[] mummyComponents;
 
     public GameManager gmScript;
+
+
 
 
     void Start()
@@ -220,6 +257,18 @@ public class CustomizationScript : MonoBehaviour
         buttonIndex = sprIndex;
 
         targetMummyComponent.sprite = currentArray[buttonIndex];
+
+        // Record current hair and clothing index for MatchSprites()
+        switch (targetMummyComponent.tag)
+        {
+            case "hair":
+                cHair_index = buttonIndex;
+                break;
+
+            case "clothing":
+                cClothing_index = buttonIndex;
+                break;
+        }
     }
 
 
@@ -273,10 +322,14 @@ public class CustomizationScript : MonoBehaviour
                 case 3:
                     hairTemp = h4_hair_sprites;
                     break;
+
+                case 4:
+                    hairTemp = h5_hair_sprites;
+                    break;
             }
 
-
-            //m_hair.sprite = hairTemp;
+            m_hair.sprite = hairTemp[cHair_index];
+            Debug.Log("hair sprite is" + m_hair.sprite.name);
 
         }
 
@@ -303,7 +356,12 @@ public class CustomizationScript : MonoBehaviour
                     clothingTemp = b4_clothing_sprites;
                     break;
             }
+
+            m_clothing.sprite = clothingTemp[cClothing_index];
+            Debug.Log("clothing sprite is" + m_clothing.sprite.name);
         }
+
+        //m_clothing.sprite = clothingTemp[cClothing_index];
     }
 
 
