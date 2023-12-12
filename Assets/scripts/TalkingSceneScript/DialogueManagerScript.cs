@@ -76,11 +76,11 @@ public class DialogueManagerScript : MonoBehaviour
     {
         dialogueIsPlaying = false;
 
-        //set up chociesText as an array for TextMeshProUGUI that will contain all chocies
+        // set up chociesText as an array for TextMeshProUGUI that will contain all chocies
         choicesTexts = new TextMeshProUGUI[choiceArray.Length];
         int index = 0;
 
-        //Initializing choice buttons
+        // Initializing choice buttons
         foreach (GameObject choice in choiceArray) //choices can be changed in inspector
         {
             choicesTexts[index] = choice.GetComponentInChildren<TextMeshProUGUI>(); //assign texts to array chociesTexts
@@ -95,18 +95,18 @@ public class DialogueManagerScript : MonoBehaviour
     {
         Debug.Log("Update:story can continue is" + story.canContinue);
 
-        if (story.canContinue)//check if we are in dialogue mode and move through story if we are in a dialogue mode
+        if (story.canContinue)// check if we are in dialogue mode and move through story if we are in a dialogue mode
         {
             CheckInput();
         }
         else
         {
             
-            //LoadScene();
+            // LoadScene();
         }
     }
 
-    //Check Input
+    // Check Input
     private void CheckInput()
     {
         if (Input.GetKeyDown(KeyCode.Space)
@@ -117,28 +117,28 @@ public class DialogueManagerScript : MonoBehaviour
     }
 
     //  Dialogue
-    //Begin dialogue and import JSON file
+    // Begin dialogue and import JSON file
     private void BeginDialogue(TextAsset INKJSON)
     {
         story = new Story(INKJSON.text);
         ProgressDialogue();
     }
 
-    //Load the JSON file into dialogues and check if the story can continue
+    // Load the JSON file into dialogues and check if the story can continue
     private void ProgressDialogue()
     {
-        if (story.canContinue) //if not the end of text file
+        if (story.canContinue) // if not the end of text file
         {
             if (displayLineCoroutine != null)
             {
-                StopCoroutine(displayLineCoroutine); //stop the displayLineCorroutine
+                StopCoroutine(displayLineCoroutine); // stop the displayLineCorroutine
             }
 
             line = story.Continue();
 
             displayLineCoroutine = StartCoroutine(DisplayText(line));
 
-            Debug.Log("Progress"+line.Substring(1)); //printing text in console
+            Debug.Log("Progress"+line.Substring(1)); // printing text in console
 
             HandleTags(story.currentTags);
         }
@@ -148,26 +148,26 @@ public class DialogueManagerScript : MonoBehaviour
         }
     }
 
-    //Display text and a text-typing effect
+    // Display text and a text-typing effect
     private IEnumerator DisplayText(string line)
     {
 
         namePanel.SetActive(true);
 
-        dialogueText.text = ""; //empty dialogue text
+        dialogueText.text = ""; // empty dialogue text
 
-        dialogueIsPlaying = true; //stop receiving inputs when typing texts
+        dialogueIsPlaying = true; // stop receiving inputs when typing texts
 
 
-        if (story.currentChoices.Count > 0) //if current choices not equal to null
+        if (story.currentChoices.Count > 0) // if current choices not equal to null
         {
             DisplayChoices();
         }
-        else //if there are no avaliable choices
+        else // if there are no avaliable choices
         {
             textLength = line.Substring(1).Length;
 
-            Debug.Log("Display "+line.Substring(1)); //printing text in console
+            Debug.Log("Display "+line.Substring(1)); // printing text in console
 
             SwitchPanel(textLength);
 
@@ -176,13 +176,13 @@ public class DialogueManagerScript : MonoBehaviour
             this.line = "";
             this.line = line;
 
-            foreach (char letter in line.Substring(1).ToCharArray()) //Typing out texts 1 char at typingSpeed
+            foreach (char letter in line.Substring(1).ToCharArray()) // Typing out texts 1 char at typingSpeed
             {
                 dialogueText.text += letter;
                 yield return new WaitForSeconds(typingSpeed);
             }
 
-            sprModifier = char.Parse(line.Substring(0, 1)); //Get the first char of the line 
+            sprModifier = char.Parse(line.Substring(0, 1)); // Get the first char of the line 
 
             dialogueIsPlaying = false;
         }
@@ -203,7 +203,7 @@ public class DialogueManagerScript : MonoBehaviour
 
     //  Panel
 
-    //Switch panel sprites according to length of text chunk
+    // Switch panel sprites according to length of text chunk
     private void SwitchPanel(float textLength)
     {
         if (textLength < 32)
@@ -223,9 +223,9 @@ public class DialogueManagerScript : MonoBehaviour
     }
 
 
-    //Tags
+    // Tags
 
-    //Find speaker tag and the corresponding speaker GameObject
+    // Find speaker tag and the corresponding speaker GameObject
     private void HandleTags(List<string> currentTags)
     {
         foreach (string tag in currentTags)
@@ -234,7 +234,7 @@ public class DialogueManagerScript : MonoBehaviour
             TagName = tag;
             speakerName.text = speaker.name;
 
-            //Disable name panel when narrator is speaking
+            // Disable name panel when narrator is speaking
             if (TagName.Equals("Narrator"))
             {
                 namePanel.SetActive(false);
@@ -242,9 +242,9 @@ public class DialogueManagerScript : MonoBehaviour
         }
     }
 
-    //Choices
+    // Choices
 
-    //Display choices and hide texts
+    // Display choices and hide texts
     private void DisplayChoices()
     {
         namePanel.SetActive(false);
@@ -254,11 +254,11 @@ public class DialogueManagerScript : MonoBehaviour
         textPanel.sprite = spr_ChoicePanel;
         textPanel.SetNativeSize();
 
-        List<Choice> currentChoices = story.currentChoices; //currentChoices property is a list of <Choice>
+        List<Choice> currentChoices = story.currentChoices; // currentChoices property is a list of <Choice>
 
         int index = 0;
 
-        foreach (Choice choice in currentChoices) //enable and initialize the choices up to the amount of choices for this line of dialogue
+        foreach (Choice choice in currentChoices) // enable and initialize the choices up to the amount of choices for this line of dialogue
         {
             choiceArray[index].gameObject.SetActive(true);
             choicesTexts[index].text = choice.text;
@@ -266,7 +266,7 @@ public class DialogueManagerScript : MonoBehaviour
         }
 
         
-        for (int i = index; i < choiceArray.Length; i++) //go through the remaining choices the UI supports + make sure they are hidden
+        for (int i = index; i < choiceArray.Length; i++) // go through the remaining choices the UI supports + make sure they are hidden
         {
             choiceArray[i].gameObject.SetActive(false);
         }
@@ -274,7 +274,7 @@ public class DialogueManagerScript : MonoBehaviour
 
 
 
-    //Hide choices and enable texts
+    // Hide choices and enable texts
     private void HideChoices()
     {
         foreach (GameObject choice in choiceArray)
@@ -283,11 +283,11 @@ public class DialogueManagerScript : MonoBehaviour
         }
     }
 
-    //Directly triggered by clicking Choice buttons
+    // Directly triggered by clicking Choice buttons
     public void MakeChoice(int choiceIndex)
     {
         story.ChooseChoiceIndex(choiceIndex);
-        ProgressDialogue(); //redirecting to ProgressDialogue after clicking
+        ProgressDialogue(); // redirecting to ProgressDialogue after clicking
     }
 
 }
