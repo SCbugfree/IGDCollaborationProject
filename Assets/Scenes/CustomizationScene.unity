@@ -331,6 +331,30 @@ PrefabInstance:
       propertyPath: gmScript
       value: 
       objectReference: {fileID: 14730486}
+    - target: {fileID: 1544625924, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
+      propertyPath: b1_clothing_sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 58c5a0499200d433d8369f2cad65eb45, type: 3}
+    - target: {fileID: 1544625924, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
+      propertyPath: b2_clothing_sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 2d8fdabb612934e29862f43079802ff9, type: 3}
+    - target: {fileID: 1544625924, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
+      propertyPath: b3_clothing_sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 67e9a0cdb4a6d44e69aa2cbc32a7a500, type: 3}
+    - target: {fileID: 1544625924, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
+      propertyPath: b3_clothing_sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: c021ad60488264338a63c4a45700dee3, type: 3}
+    - target: {fileID: 1544625924, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
+      propertyPath: b4_clothing_sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: c5163eab0b5e94a43ac78e614682c401, type: 3}
+    - target: {fileID: 1544625924, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
+      propertyPath: b4_clothing_sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 8bf7073a24c7347c3abe6060f6f727c5, type: 3}
     - target: {fileID: 667277308452142150, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
