@@ -2568,7 +2568,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1183079465714554365}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10.929}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7586,7 +7586,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1183079465714554365}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 6.2}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -10068,7 +10068,7 @@ GameObject:
   - component: {fileID: 1183079465714554355}
   - component: {fileID: 1183079465714554352}
   m_Layer: 5
-  m_Name: Canvas 1
+  m_Name: Canvas
   m_TagString: canvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10088,10 +10088,10 @@ RectTransform:
   m_Children:
   - {fileID: 1183079463970032321}
   - {fileID: 1183079465190237172}
-  - {fileID: 6559000210350852432}
   - {fileID: 1183079464109255979}
   - {fileID: 5300175710795964848}
   - {fileID: 1183079465039253722}
+  - {fileID: 6559000210350852432}
   - {fileID: 1183079464015846086}
   - {fileID: 1372229653166108422}
   - {fileID: 1183079465061001777}
@@ -11675,7 +11675,7 @@ RectTransform:
   - {fileID: 1183079463628210260}
   - {fileID: 3158448563439076391}
   m_Father: {fileID: 1183079465714554365}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -13520,7 +13520,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1183079465714554365}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
