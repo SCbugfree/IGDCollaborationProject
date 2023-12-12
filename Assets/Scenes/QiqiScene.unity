@@ -1981,6 +1981,9 @@ MonoBehaviour:
   - {fileID: 246634884}
   - {fileID: 323664201}
   - {fileID: 1183511890}
+  choicesText: []
+  <dialogueIsPlaying>k__BackingField: 0
+  canContinueToNextLine: 0
   buttonTemp: {fileID: 1708741695}
 --- !u!1 &2135432878
 GameObject:

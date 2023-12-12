@@ -155,8 +155,7 @@ MonoBehaviour:
   mummyPos: {fileID: 1544625923}
   mummy_instance: {fileID: 0}
   MummyPrefab: {fileID: 7762578637987193676, guid: 91b4fc84dba124d9fa46a1d0578f2831, type: 3}
-  name: 
-  headColor: {r: 0, g: 0, b: 0, a: 0}
+  hairColor: {r: 0, g: 0, b: 0, a: 0}
   skinColor: {r: 0, g: 0, b: 0, a: 0}
   body_choice: {fileID: 0}
   hair_choice: {fileID: 0}
@@ -181,6 +180,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &345431468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 345431470}
+  - component: {fileID: 345431469}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &345431469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345431468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b60976e708e1e4084ba4d97bd49a8b0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &345431470
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345431468}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 796.0288, y: 256.54507, z: 7651.73}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &385697911
 GameObject:
@@ -352,6 +395,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: PassIndex
       objectReference: {fileID: 0}
+    - target: {fileID: 1183079464217093260, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 107
+      objectReference: {fileID: 0}
     - target: {fileID: 1183079464217093263, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
@@ -359,7 +406,7 @@ PrefabInstance:
     - target: {fileID: 1183079464217093263, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 14730486}
+      objectReference: {fileID: 345431469}
     - target: {fileID: 1183079464217093263, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -373,16 +420,24 @@ PrefabInstance:
       value: SendBuiltMummyInfo
       objectReference: {fileID: 0}
     - target: {fileID: 1183079464217093263, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AllSceneManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183079464217093263, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: CustomizationScript, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1183079464217093263, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: TalkingScene
+      value: NameThatMom
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183079464285107362, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 206
       objectReference: {fileID: 0}
     - target: {fileID: 1183079464285107363, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1183079464293102842, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -466,7 +521,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1183079464757484435, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1183079464877582271, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -612,6 +667,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1183079465714554354, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 385697913}
     - target: {fileID: 1183079465714554365, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -784,7 +843,8 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: HairColorPicker
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1183079464217093259, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
 --- !u!224 &1544625923 stripped
 RectTransform:

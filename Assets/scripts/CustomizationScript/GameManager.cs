@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Mummy Profile")]
 
-    [SerializeField] string name;
+    //[SerializeField] string name;
 
     [SerializeField] Color hairColor;
 
@@ -171,13 +171,6 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-    }
-
-
-    // Change Scene
-    public static void LoadNewScene(string scene)
-    {
-        SceneManager.LoadScene(scene);
     }
 
 
