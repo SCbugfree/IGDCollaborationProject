@@ -95,6 +95,8 @@ public class CustomizationScript : MonoBehaviour
     [SerializeField] GameObject mummyInstance;
     [SerializeField] Image[] mummyComponents;
 
+    public GameManager gmScript;
+
 
     void Start()
     {
@@ -247,9 +249,33 @@ public class CustomizationScript : MonoBehaviour
         // If head and hair sprites are shown
         if (m_head.sprite != null && m_hair.sprite != null)
         {
-            int index = Array.IndexOf(head_sprites,m_head.sprite);
-            string arrayName = "h" + (index + 1) + "_hair_sprites";
-            hairTemp = FindArrayByName(arrayName);
+            int head_index = Array.IndexOf(head_sprites, m_head.sprite);
+
+            //string arrayName = "h" + (index + 1) + "_hair_sprites";
+            //hairTemp = FindArrayByName(arrayName);
+
+            switch (head_index)
+            {
+                case 0:
+                    hairTemp = h1_hair_sprites;
+                    break;
+
+                case 1:
+                    hairTemp = h2_hair_sprites;
+                    break;
+
+                case 2:
+                    hairTemp = h3_hair_sprites;
+                    break;
+
+                case 3:
+                    hairTemp = h4_hair_sprites;
+                    break;
+            }
+
+
+            //m_hair.sprite = hairTemp;
+
         }
 
         // If body and clothing sprites are shown
@@ -293,5 +319,16 @@ public class CustomizationScript : MonoBehaviour
             }
         }
         return tempArray;
+    }
+
+    // Pass parameters to GameManager to store Mummy Profile choices
+    public void SendBuiltMummyInfo()
+    {
+        Sprite[] MummyInfo = {m_body.sprite, m_head.sprite, m_eyes.sprite, m_nose.sprite,
+                              m_brows.sprite, m_mouth.sprite, m_hair.sprite, m_clothing.sprite};
+
+
+        gmScript.GetComponent<GameManager>().GetPlayerBuiltMummy(MummyInfo);
+        gmScript.GetComponent<GameManager>().GetPlayerColor(m_hair.color, m_body.color);
     }
 }

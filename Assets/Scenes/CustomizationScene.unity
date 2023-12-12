@@ -158,6 +158,14 @@ MonoBehaviour:
   name: 
   headColor: {r: 0, g: 0, b: 0, a: 0}
   skinColor: {r: 0, g: 0, b: 0, a: 0}
+  body_choice: {fileID: 0}
+  hair_choice: {fileID: 0}
+  nose_choice: {fileID: 0}
+  brows_choice: {fileID: 0}
+  eyes_choice: {fileID: 0}
+  head_choice: {fileID: 0}
+  mouth_choice: {fileID: 0}
+  clothing_choice: {fileID: 0}
   score: 90
 --- !u!4 &14730487
 Transform:
@@ -276,6 +284,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1544625924, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
+      propertyPath: gmScript
+      value: 
+      objectReference: {fileID: 14730486}
     - target: {fileID: 667277308452142150, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -351,14 +363,22 @@ PrefabInstance:
     - target: {fileID: 1183079464217093263, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 14730486}
+      objectReference: {fileID: 964205799}
     - target: {fileID: 1183079464217093263, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadNewScene
       objectReference: {fileID: 0}
     - target: {fileID: 1183079464217093263, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: GetPlayerBuiltMummy
+      value: SendBuiltMummyInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183079464217093263, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: CustomizationScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183079464217093263, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: TalkingScene
       objectReference: {fileID: 0}
     - target: {fileID: 1183079464285107363, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
       propertyPath: m_IsActive
