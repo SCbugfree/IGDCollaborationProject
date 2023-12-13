@@ -110,7 +110,7 @@ public class CustomizationScript : MonoBehaviour
 
     [SerializeField] private GameObject buttonComponent; // store the choice button selected
 
-    [SerializeField] private Image targetMummyComponent;
+    [SerializeField] private Image targetMommyComponent;
 
     [SerializeField] private int buttonIndex; // store the index of the button selected
 
@@ -126,9 +126,9 @@ public class CustomizationScript : MonoBehaviour
 
     [SerializeField] private int cClothing_index = 0; // store current sprite index of clothing sprite in clothing array
 
-    [SerializeField] GameObject mummyInstance;
+    [SerializeField] GameObject mommyInstance;
 
-    [SerializeField] Image[] mummyComponents;
+    [SerializeField] Image[] mommyComponents;
 
     public GameManager gmScript;
 
@@ -137,9 +137,9 @@ public class CustomizationScript : MonoBehaviour
 
     void Start()
     {
-        FindMummyInstance();
+        FindMommyInstance();
         currentArray = body_sprites;
-        targetMummyComponent = m_body;
+        targetMommyComponent = m_body;
     }
 
 
@@ -150,14 +150,14 @@ public class CustomizationScript : MonoBehaviour
 
 
     // Reference Mummy Instance
-    private void FindMummyInstance()
+    private void FindMommyInstance()
     {
-        mummyInstance = GameObject.FindWithTag("MummyClone");
-        mummyComponents = mummyInstance.GetComponentsInChildren<Image>();
+        mommyInstance = GameObject.FindWithTag("MommyClone");
+        mommyComponents = mommyInstance.GetComponentsInChildren<Image>();
 
-        if (mummyComponents.Length > 0)
+        if (mommyComponents.Length > 0)
         {
-            foreach (Image image in mummyComponents)
+            foreach (Image image in mommyComponents)
             {
                 switch (image.tag)
                 {
@@ -202,19 +202,19 @@ public class CustomizationScript : MonoBehaviour
     public void ChangeSprites()
     {
         buttonComponent = EventSystem.current.currentSelectedGameObject;
-        mummyComponents = mummyInstance.GetComponentsInChildren<Image>();
+        mommyComponents = mommyInstance.GetComponentsInChildren<Image>();
 
         // Fetch the corresponding component in Mummy Instance
-        foreach (Image current_image in mummyComponents)
+        foreach (Image current_image in mommyComponents)
         {
             if (buttonComponent.tag == current_image.tag)
             {
-                targetMummyComponent = current_image;
+                targetMommyComponent = current_image;
             }
         }
 
         // Reference the target sprite array by current MummyComponent
-        switch (targetMummyComponent.tag)
+        switch (targetMommyComponent.tag)
         {
             case "body":
                 currentArray = body_sprites;
@@ -256,10 +256,10 @@ public class CustomizationScript : MonoBehaviour
     {
         buttonIndex = sprIndex;
 
-        targetMummyComponent.sprite = currentArray[buttonIndex];
+        targetMommyComponent.sprite = currentArray[buttonIndex];
 
         // Record current hair and clothing index for MatchSprites()
-        switch (targetMummyComponent.tag)
+        switch (targetMommyComponent.tag)
         {
             case "hair":
                 cHair_index = buttonIndex;
@@ -398,14 +398,14 @@ public class CustomizationScript : MonoBehaviour
         return tempArray;
     }
 
-    // Pass parameters to GameManager to store Mummy Profile choices
-    public void SendBuiltMummyInfo()
+    // Pass parameters to GameManager to store Mommy Profile choices
+    public void SendBuiltMommyInfo()
     {
-        Sprite[] MummyInfo = {m_body.sprite, m_head.sprite, m_eyes.sprite, m_nose.sprite,
+        Sprite[] MommyInfo = {m_body.sprite, m_head.sprite, m_eyes.sprite, m_nose.sprite,
                               m_brows.sprite, m_mouth.sprite, m_hair.sprite, m_clothing.sprite};
 
 
-        gmScript.GetComponent<GameManager>().GetPlayerBuiltMummy(MummyInfo);
+        gmScript.GetComponent<GameManager>().GetPlayerBuiltMommy(MommyInfo);
         gmScript.GetComponent<GameManager>().GetPlayerColor(m_hair.color, m_body.color);
     }
 }

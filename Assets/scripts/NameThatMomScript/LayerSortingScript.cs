@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LayerSortingScript : MonoBehaviour
 {
-    GameObject mummy_instance;
+    GameObject mommy_instance;
 
     [SerializeField] GameObject frontPanel;
     [SerializeField] GameObject namePanel;
@@ -24,11 +24,9 @@ public class LayerSortingScript : MonoBehaviour
 
     void CheckOrder()
     {
-        mummy_instance = GameObject.FindWithTag("MummyClone");
+        mommy_instance = GameObject.FindWithTag("MommyClone");
 
-        mummy_instance.transform.SetSiblingIndex(2);
-
-        int m_index = mummy_instance.transform.GetSiblingIndex();
+        mommy_instance.transform.SetSiblingIndex(2);
 
         frontPanel.transform.SetSiblingIndex(3);
 

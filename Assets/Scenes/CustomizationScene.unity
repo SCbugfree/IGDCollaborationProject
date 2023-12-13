@@ -152,9 +152,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ca191ead6c994f80b659f7e3d4de0af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mummyPos: {fileID: 1544625923}
-  mummy_instance: {fileID: 0}
-  MummyPrefab: {fileID: 7762578637987193676, guid: 91b4fc84dba124d9fa46a1d0578f2831, type: 3}
+  mommyPos: {fileID: 1544625923}
+  mommy_instance: {fileID: 0}
+  MommyPrefab: {fileID: 7762578637987193676, guid: 91b4fc84dba124d9fa46a1d0578f2831, type: 3}
   hairColor: {r: 0, g: 0, b: 0, a: 0}
   skinColor: {r: 0, g: 0, b: 0, a: 0}
   body_choice: {fileID: 0}
@@ -445,7 +445,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1183079464217093263, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SendBuiltMummyInfo
+      value: SendBuiltMommyInfo
       objectReference: {fileID: 0}
     - target: {fileID: 1183079464217093263, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -894,6 +894,14 @@ PrefabInstance:
     - target: {fileID: 8484576041777716754, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: HairColorPicker
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916709881999369229, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
+      propertyPath: m_Name
+      value: MommyPos
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916709881999369229, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
+      propertyPath: m_TagString
+      value: mommypos
       objectReference: {fileID: 0}
     - target: {fileID: 9149279657333495231, guid: c944705ecd03f4a0f8fd67687ceb5a74, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

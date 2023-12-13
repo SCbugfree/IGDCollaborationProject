@@ -10,6 +10,18 @@ TagManager:
   - NPC1
   - Amelia
   - Narrator
+  - head
+  - body
+  - brows
+  - nose
+  - eyes
+  - hair
+  - clothing
+  - mouth
+  - mummypos
+  - canvas
+  - MommyClone
+  - mommypos
   layers:
   - Default
   - TransparentFX

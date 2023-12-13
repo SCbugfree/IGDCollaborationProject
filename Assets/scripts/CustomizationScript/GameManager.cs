@@ -14,14 +14,14 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set;}
 
     private Transform canvas;
-    public Transform mummyPos;
-    public GameObject mummy_instance;
-    public GameObject MummyPrefab;
+    public Transform mommyPos;
+    public GameObject mommy_instance;
+    public GameObject MommyPrefab;
 
     //public GameManager mummy_instance;
     //private GameManager MummyPrefab;
 
-    [Header("Mummy Profile")]
+    [Header("Mommy Profile")]
 
     //[SerializeField] string name;
 
@@ -83,8 +83,8 @@ public class GameManager : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         canvas = FindCanvas();
-        mummyPos = FindMummyPos();
-        LoadMummyPrefab(canvas, mummyPos);
+        mommyPos = FindMommyPos();
+        LoadMommyPrefab(canvas, mommyPos);
     }
 
 
@@ -97,39 +97,39 @@ public class GameManager : MonoBehaviour
 
 
     // Fetch MummyPosition in the scene
-    private Transform FindMummyPos()
+    private Transform FindMommyPos()
     {
-        mummyPos = GameObject.FindWithTag("mummypos").transform;
+        mommyPos = GameObject.FindWithTag("mommypos").transform;
 
-        if (mummyPos == null)
+        if (mommyPos == null)
         {
-            mummyPos = Instantiate(mummyPos, canvas);
-            mummyPos.transform.position = new Vector3(1000f, -1000f, 0f);
+            mommyPos = Instantiate(mommyPos, canvas);
+            mommyPos.transform.position = new Vector3(1000f, -1000f, 0f);
             Debug.Log("null finding hence assigned pos");
         }
 
-        return mummyPos;
+        return mommyPos;
     }
 
 
     // Load and instantiate Mummy Prefab
-    private void LoadMummyPrefab(Transform canvas, Transform mummyPos)
+    private void LoadMommyPrefab(Transform canvas, Transform mommyPos)
     {
-        MummyPrefab = Resources.Load("Mummy") as GameObject;
-        mummy_instance = Instantiate(MummyPrefab, canvas);
-        mummy_instance.transform.position = mummyPos.position;
+        MommyPrefab = Resources.Load("Mommy") as GameObject;
+        mommy_instance = Instantiate(MommyPrefab, canvas);
+        mommy_instance.transform.position = mommyPos.position;
 
         //mummy_instance = (GameManager) PrefabUtility.InstantiatePrefab(MummyPrefab);
         //mummy_instance.gameObject.transform.SetParent(canvas);
         //mummy_instance.gameObject.transform.position = mummyPos.position;
         //var m_i = mummy_instance.gameObject;
 
-        Image[] mummyComponents = mummy_instance.GetComponentsInChildren<Image>();
+        Image[] mommyComponents = mommy_instance.GetComponentsInChildren<Image>();
         Scene scene = SceneManager.GetActiveScene();
 
-        if (mummyComponents.Length > 0 && (scene.name != "CustomizationScene"))
+        if (mommyComponents.Length > 0 && (scene.name != "CustomizationScene"))
         {
-            foreach (Image image in mummyComponents)
+            foreach (Image image in mommyComponents)
             {
                 switch (image.tag)
                 {
@@ -174,12 +174,12 @@ public class GameManager : MonoBehaviour
     }
 
 
-    // Record player choices in Mummy customization
-    public void GetPlayerBuiltMummy(Sprite[] sprites)
+    // Record player choices in Mommy customization
+    public void GetPlayerBuiltMommy(Sprite[] sprites)
     {
-        if (mummy_instance != null)
+        if (mommy_instance != null)
         {
-            //PrefabUtility.ApplyPrefabInstance(mummy_instance, InteractionMode.AutomatedAction);
+            //PrefabUtility.ApplyPrefabInstance(mommy_instance, InteractionMode.AutomatedAction);
             //EditorUtility.SetDirty(MummyPrefab);
             //AssetDatabase.SaveAssets();
             //Debug.Log("Prefab modified");
