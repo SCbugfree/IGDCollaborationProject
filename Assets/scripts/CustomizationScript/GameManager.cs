@@ -48,7 +48,8 @@ public class GameManager : MonoBehaviour
 
     [Header("Choices record")]
 
-    public int score = 90;
+    [SerializeField] public int MadiScore = 90;
+    [SerializeField] public int JadeScore = 90;
 
 
 
@@ -118,6 +119,7 @@ public class GameManager : MonoBehaviour
         MommyPrefab = Resources.Load("Mommy") as GameObject;
         mommy_instance = Instantiate(MommyPrefab, canvas);
         mommy_instance.transform.position = mommyPos.position;
+
 
         //mummy_instance = (GameManager) PrefabUtility.InstantiatePrefab(MummyPrefab);
         //mummy_instance.gameObject.transform.SetParent(canvas);
@@ -204,8 +206,15 @@ public class GameManager : MonoBehaviour
 
 
     // Record player choices in dialogues: to be used in ScoreCalculator in Final Scene
-    public void RecordChoice(int score_got)
+    //Madi' score
+    public void RecordMadiChoice(int score_got)
     {
-        score += score_got;
+        MadiScore += score_got;
+    }
+
+    //Jade's score
+    public void RecordJadeChoice(int score_got)
+    {
+        JadeScore += score_got;
     }
 }

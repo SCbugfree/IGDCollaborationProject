@@ -79,7 +79,11 @@ public class DialogueManagerScript : MonoBehaviour
 
     private Animator npcAnim;
 
+    //private Animator mommyAnim;
+
     private bool NextSceneGo = false;
+
+
 
     //private float nameLength;
 
@@ -260,6 +264,8 @@ public class DialogueManagerScript : MonoBehaviour
             // Get speaker name
             if (TagName == "MommyClone") // if speaker is player
             {
+                //mommyAnim = GameObject.FindWithTag(TagName).GetComponent<Animator>();
+
                 speaker = GameObject.FindWithTag("GameManager");
 
                 GameManager gm_script = speaker.GetComponent<GameManager>();
@@ -267,10 +273,8 @@ public class DialogueManagerScript : MonoBehaviour
 
                 namePanel.SetActive(true);
 
-                Debug.Log("first name is" + speakerName.text);
+                //Invoke("MommyEnterAnim", 0.01f);
 
-                //speakerName.text = PlayerPrefs.GetString("firstName");
-                //Debug.Log("Player name is" + PlayerPrefs.GetString("firstName"));
             }
             else if (TagName == "Narrator") 
             {
@@ -282,6 +286,8 @@ public class DialogueManagerScript : MonoBehaviour
                 namePanel.SetActive(true);
                 speakerName.text = speaker.name;
                 npcAnim = speaker.GetComponent<Animator>();
+
+                namePanel.SetActive(true);
 
                 Invoke("TalkStretchAnim", 0.01f);
             }
@@ -335,8 +341,6 @@ public class DialogueManagerScript : MonoBehaviour
         ProgressDialogue(); // redirecting to ProgressDialogue after clicking
     }
 
-
-
     // Animations
 
     // Arrow Setter
@@ -353,12 +357,21 @@ public class DialogueManagerScript : MonoBehaviour
     }
 
     /*
-  private void SetMommyPortrait()
-  {
-      portraitImage.enabled = true; //Enabled Behaviours are Updated, disabled Behaviours are not
-      portraitImage.sprite = portrait;
-  }
-*/
+    // Animation of Mommy Entering scene
+     private void MommyEnterAnim()
+    {
+        mommyAnim.SetTrigger("Right");
+    }
+
+    // Animation of Mommy Exiting scene
+    private void MommyExitAnimation()
+    {
+        mommyAnim.SetTrigger("Left");
+    }
+    */
+
+
+
 
 
 }
