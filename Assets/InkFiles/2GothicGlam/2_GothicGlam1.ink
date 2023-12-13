@@ -1,6 +1,5 @@
 //This is the file storing dialogues in Scene2: Gothic Glam
 // !Narrator @Player #Amelia/Daughter, %Jade/Mommy 1, ^: Mommy 2, &: NPC/No image
-VAR Dialogue = ""
 VAR symbol = ""
 VAR Response = ""
 
@@ -26,34 +25,28 @@ VAR Response = ""
 
 %Wow, your daughter has good taste! My Synthetic Love rocks. #MommyClone
 
--> MSL_Choice
+ -> MSL_Choice
 
 === MSL_Choice ===
 %I am quite enamored with their music as well… What’s the song you would deem your favorite? #Jade
 
-    +[Adolescents]
-        ~ Dialogue = "Adolescents"
+
+    + ["Adolescents"]
         ~ symbol = "¥"
         ~ Response = "Oh… Interesting."
         -> CHOICEMADE
         
-    +[Greetings to the Dark March]
-        ~ Dialogue = "Greetings to the Dark March"
+    + ["Greetings to the Dark March"]
         ~ symbol = "$"
         ~ Response = " I quite like that one!"
         -> CHOICEMADE
         
-    +[Love]
-        ~ Dialogue = "Love"
+    + ["Love"]
         ~ symbol = "!"
         ~ Response = "That one is fine."
         -> CHOICEMADE
 
 === CHOICEMADE ===
-!{Dialogue} #MommyClone
--> FEEDBACK
-
-=== FEEDBACK ===
 {symbol}{Response} #Jade
 -> CONTINUE
 
@@ -96,4 +89,4 @@ VAR Response = ""
 
 %Well Amelia recently got a scholarship after she submitted some of her photographs. #MommyClone
 
--> END
+ -> END

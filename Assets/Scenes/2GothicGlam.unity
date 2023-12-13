@@ -429,7 +429,7 @@ PrefabInstance:
     - target: {fileID: 6126597650677328602, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
       propertyPath: INKJSON
       value: 
-      objectReference: {fileID: 4900000, guid: 9652d77f4bb894478a0debbd88357e19, type: 3}
+      objectReference: {fileID: 4900000, guid: bca4d1e18a2e94f249e1a485d602dd28, type: 3}
     - target: {fileID: 6126597650677328602, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
       propertyPath: nextSceneName
       value: 2.2GothicGlam 1
