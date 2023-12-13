@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b7a06d740d8ca4d30aa2871b15c0a672
+guid: 3aeb3158a0efa4feb9006484f0bc49be
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,91 +115,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: DialoguePanels_0
-      rect:
-        serializedVersion: 2
-        x: 116
-        y: 795
-        width: 1564
-        height: 168
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 73ecf74ba8b2d4bbcb538091cc57628f
-      internalID: 1499819633
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DialoguePanels_1
-      rect:
-        serializedVersion: 2
-        x: 94
-        y: 488
-        width: 1563
-        height: 213
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea5afaf27cedf4378b1e7c07af6f1a1e
-      internalID: 1758831835
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DialoguePanels_2
-      rect:
-        serializedVersion: 2
-        x: 1728
-        y: 521
-        width: 36
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e776e7d770eeb4bda91f3b6b66a52d2f
-      internalID: -2018086803
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DialoguePanels_3
-      rect:
-        serializedVersion: 2
-        x: 117
-        y: 100
-        width: 1562
-        height: 260
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7f7a4f6114884ed3b39f7d72fa4607f
-      internalID: 1051176775
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -210,11 +126,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      DialoguePanels_0: 1499819633
-      DialoguePanels_1: 1758831835
-      DialoguePanels_2: -2018086803
-      DialoguePanels_3: 1051176775
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -5,8 +5,16 @@ using UnityEngine.UI;
 
 public class ImageModifier : MonoBehaviour
 {
-    [SerializeField] private Sprite portrait1, portrait2;
+    [Header("NPC sprite(s)")]
+
+    [SerializeField] private Sprite[] npc_sprites;
+
+
+    [Header("Dialogue Manager")]
+
     [SerializeField] DialogueManagerScript dms;
+
+
     private Image npcImage;
     private string tagCheck; //check if tag of this gameObject matches the speaker tag from DialogueManagerScript
     private char sprMod; //get the sprite modifier extracted from DialogueManagerScript
@@ -18,12 +26,12 @@ public class ImageModifier : MonoBehaviour
 
     private void Update()
     {
-        /*
+        
         if (npcImage != null)
         {
             npcImage.SetNativeSize();
         }
-        */
+        
 
         sprMod = dms.sprModifier; //testing
         tagCheck = dms.TagName;
@@ -42,20 +50,29 @@ public class ImageModifier : MonoBehaviour
 
         switch (sprMod)
         {
+            // Neutral(deafult) 
+            case '%':
+                Debug.Log("Portrait1  on Display");
+                return npc_sprites[0];
+
+            // Happy
             case '$':
-                Debug.Log("Portrait1 on Display");
-                return portrait1;
-            //break;
-
-            case '¥':
                 Debug.Log("Portrait2 on Display");
-                return portrait2;
-           // break;
+                return npc_sprites[1];
 
+            // Uspset
+            case '¥':
+                Debug.Log("Portrait3 on Display");
+                return npc_sprites[1];
+
+            //Shy
+            case '&':
+                Debug.Log("Portrait4 on Display");
+                return npc_sprites[1];
+            
             default:
                 Debug.Log("Portrait1 on Display");
-                return portrait1;
-            //break;
+                return npc_sprites[0];
         }
     }
 }

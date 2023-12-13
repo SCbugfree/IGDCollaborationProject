@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 14730486}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -155,6 +155,7 @@ MonoBehaviour:
   mommyPos: {fileID: 1544625923}
   mommy_instance: {fileID: 0}
   MommyPrefab: {fileID: 7762578637987193676, guid: 91b4fc84dba124d9fa46a1d0578f2831, type: 3}
+  firstName: 
   hairColor: {r: 0, g: 0, b: 0, a: 0}
   skinColor: {r: 0, g: 0, b: 0, a: 0}
   body_choice: {fileID: 0}

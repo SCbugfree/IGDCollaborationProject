@@ -13,17 +13,22 @@ public class DialogueManagerScript : MonoBehaviour
 
     [Header("Dialogue and Name Panels")]
 
-    [SerializeField] private Image textPanel; //to later change the sprite of the panel
-    [SerializeField] private GameObject namePanel; //the panel which displays the speaker name
+    [SerializeField] private Image textPanel; // to later change the sprite of the panel
+    [SerializeField] private GameObject namePanel; // the panel which displays the speaker name
     [SerializeField] private Sprite spr_Panel1;
     [SerializeField] private Sprite spr_Panel2;
     [SerializeField] private Sprite spr_Panel3;
     [SerializeField] private Sprite spr_ChoicePanel;
+    [SerializeField] private Sprite spr_namePanel1;
+    [SerializeField] private Sprite spr_namePanel2;
+    [SerializeField] private Sprite spr_namePanel3;
+
 
     [Header("Texts")]
 
-    [SerializeField] private TextMeshProUGUI dialogueText; //visually display dialogue text
-    [SerializeField] private TextMeshProUGUI speakerName; //visually display speaker name
+    [SerializeField] private TextMeshProUGUI dialogueText; // visually display dialogue text
+    [SerializeField] private TextMeshProUGUI speakerName; // visually display speaker name
+
 
     [Header("NPC and Player Images")]
 
@@ -31,35 +36,47 @@ public class DialogueManagerScript : MonoBehaviour
     [SerializeField] private Image image_NPC2;
     [SerializeField] private Image image_Player;
 
+
     [Header("Choices")]
 
     [SerializeField] private GameObject[] choiceArray;
 
-    private TextMeshProUGUI[] choicesTexts;
+
+    [Header("Panel Text length Indicator")]
+
+    public float textL1 = 32;
+    public float textL2 = 64;
+
+    [Header("Name Text Length Indicator")]
+
+    public float nameL1 = 6;
+    public float nameL2 = 10;
+
 
     public TextAsset INKJSON;
 
+    public string TagName; // record the content of the tag
+
+    public bool dialogueIsPlaying { get; private set; }
+
+    public char sprModifier;
+
+
     private Story story;
+
+    private TextMeshProUGUI[] choicesTexts;
 
     private Coroutine displayLineCoroutine; //?
 
-    //Track who is speaking
-    private GameObject speaker;
+    private GameObject speaker; // Track who is speaking
 
     private string line;
-
-    public char sprModifier;
 
     private float typingSpeed = 0.02f;
 
     private float textLength;
 
-    public string TagName; //record the content of the tag
-
-    //[SerializeField] private GameObject[] choices;
-    //private TextMeshProUGUI[] choicesText;
-
-    public bool dialogueIsPlaying { get; private set; }
+    private float nameLength;
 
    
     void Awake()
@@ -101,8 +118,7 @@ public class DialogueManagerScript : MonoBehaviour
         }
         else
         {
-            
-            // LoadScene();
+            AllSceneManager.LoadNewScene("GothicGlam");
         }
     }
 
@@ -116,7 +132,9 @@ public class DialogueManagerScript : MonoBehaviour
         }
     }
 
+
     //  Dialogue
+
     // Begin dialogue and import JSON file
     private void BeginDialogue(TextAsset INKJSON)
     {
@@ -147,6 +165,7 @@ public class DialogueManagerScript : MonoBehaviour
             Debug.Log("no story can coninue");
         }
     }
+
 
     // Display text and a text-typing effect
     private IEnumerator DisplayText(string line)
@@ -185,6 +204,8 @@ public class DialogueManagerScript : MonoBehaviour
             sprModifier = char.Parse(line.Substring(0, 1)); // Get the first char of the line 
 
             dialogueIsPlaying = false;
+
+            
         }
 
     }
@@ -206,11 +227,11 @@ public class DialogueManagerScript : MonoBehaviour
     // Switch panel sprites according to length of text chunk
     private void SwitchPanel(float textLength)
     {
-        if (textLength < 32)
+        if (textLength < textL1)
         {
             textPanel.sprite = spr_Panel1;
         }
-        else if ((textLength > 32) && (textLength < 64))
+        else if ((textLength > textL1) && (textLength < textL2))
         {
             textPanel.sprite = spr_Panel2;
         }
@@ -232,15 +253,30 @@ public class DialogueManagerScript : MonoBehaviour
         { 
             speaker = GameObject.FindWithTag(tag);
             TagName = tag;
-            speakerName.text = speaker.name;
 
-            // Disable name panel when narrator is speaking
-            if (TagName.Equals("Narrator"))
+            // Get speaker name
+            if (TagName == "MommyClone") // if speaker is player
+            {
+                namePanel.SetActive(true);
+                GameManager gm_script = speaker.GetComponent<GameManager>();
+                speakerName.text = gm_script.firstName;
+
+                //speakerName.text = PlayerPrefs.GetString("firstName");
+                //Debug.Log("Player name is" + PlayerPrefs.GetString("firstName"));
+            }
+            else if (TagName == "Narrator") // Disable name panel when narrator is speaking
             {
                 namePanel.SetActive(false);
             }
+            else // speaker is NPC (tag and name are same string)
+            {
+                Debug.Log("NPC speaker now");
+                namePanel.SetActive(true);
+                speakerName.text = speaker.name;
+            }
         }
     }
+
 
     // Choices
 
@@ -265,7 +301,6 @@ public class DialogueManagerScript : MonoBehaviour
             index++;
         }
 
-        
         for (int i = index; i < choiceArray.Length; i++) // go through the remaining choices the UI supports + make sure they are hidden
         {
             choiceArray[i].gameObject.SetActive(false);

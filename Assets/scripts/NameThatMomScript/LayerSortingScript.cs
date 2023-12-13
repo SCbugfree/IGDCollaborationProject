@@ -9,17 +9,12 @@ public class LayerSortingScript : MonoBehaviour
     [SerializeField] GameObject frontPanel;
     [SerializeField] GameObject namePanel;
     [SerializeField] GameObject panel1;
+    [SerializeField] GameObject underlines;
 
     // Start is called before the first frame update
     void Start()
     {
         CheckOrder();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //CheckOrder();
     }
 
     void CheckOrder()
@@ -33,5 +28,8 @@ public class LayerSortingScript : MonoBehaviour
         namePanel.transform.SetSiblingIndex(4);
 
         panel1.transform.SetSiblingIndex(1);
+
+        underlines.transform.SetSiblingIndex(5);
+
     } 
 }

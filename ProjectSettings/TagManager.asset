@@ -4,10 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - testbutton
   - options
-  - NPC2
-  - NPC1
   - Amelia
   - Narrator
   - head
@@ -22,6 +19,9 @@ TagManager:
   - canvas
   - MommyClone
   - mommypos
+  - Jade
+  - Madi
+  - GameManager
   layers:
   - Default
   - TransparentFX

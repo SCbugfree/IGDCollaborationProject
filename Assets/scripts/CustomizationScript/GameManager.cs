@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Mommy Profile")]
 
-    //[SerializeField] string name;
+    public string firstName;
 
     [SerializeField] Color hairColor;
 
