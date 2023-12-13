@@ -19,9 +19,10 @@ public class DialogueManagerScript : MonoBehaviour
     [SerializeField] private Sprite spr_Panel2;
     [SerializeField] private Sprite spr_Panel3;
     [SerializeField] private Sprite spr_ChoicePanel;
-    [SerializeField] private Sprite spr_namePanel1;
-    [SerializeField] private Sprite spr_namePanel2;
-    [SerializeField] private Sprite spr_namePanel3;
+    //[SerializeField] private Sprite spr_namePanel1;
+    //[SerializeField] private Sprite spr_namePanel2;
+    //[SerializeField] private Sprite spr_namePanel3;
+    [SerializeField] private GameObject arrow;
 
 
     [Header("Texts")]
@@ -33,8 +34,8 @@ public class DialogueManagerScript : MonoBehaviour
     [Header("NPC and Player Images")]
 
     [SerializeField] private Image image_NPC1;
-    [SerializeField] private Image image_NPC2;
-    [SerializeField] private Image image_Player;
+    //[SerializeField] private Image image_NPC2;
+    [SerializeField] private Image image_Player; //get player
 
 
     [Header("Choices")]
@@ -44,13 +45,13 @@ public class DialogueManagerScript : MonoBehaviour
 
     [Header("Panel Text length Indicator")]
 
-    public float textL1 = 32;
-    public float textL2 = 64;
+    public float textL1 = 75;
+    public float textL2 = 120;
 
-    [Header("Name Text Length Indicator")]
+    //[Header("Name Text Length Indicator")]
 
-    public float nameL1 = 6;
-    public float nameL2 = 10;
+    //public float nameL1 = 6;
+    //public float nameL2 = 10;
 
 
     public TextAsset INKJSON;
@@ -76,7 +77,11 @@ public class DialogueManagerScript : MonoBehaviour
 
     private float textLength;
 
-    private float nameLength;
+    private Animator npcAnim;
+
+    private bool NextSceneGo = false;
+
+    //private float nameLength;
 
    
     void Awake()
@@ -91,6 +96,7 @@ public class DialogueManagerScript : MonoBehaviour
 
     void Start()
     {
+        
         dialogueIsPlaying = false;
 
         // set up chociesText as an array for TextMeshProUGUI that will contain all chocies
@@ -110,25 +116,33 @@ public class DialogueManagerScript : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("Update:story can continue is" + story.canContinue);
-
         if (story.canContinue)// check if we are in dialogue mode and move through story if we are in a dialogue mode
         {
             CheckInput();
+            ArrowAnim(dialogueIsPlaying);
         }
         else
         {
-            AllSceneManager.LoadNewScene("GothicGlam");
+            NextSceneGo = true;
+            CheckInput();
         }
     }
 
     // Check Input
     private void CheckInput()
     {
-        if (Input.GetKeyDown(KeyCode.Space)
-            && !dialogueIsPlaying) //disable input when dialogue is playing
+        if (Input.GetKeyDown(KeyCode.Space) && !dialogueIsPlaying) // only progress dialogue when dialogue is not playing
         {
             ProgressDialogue();
+        }
+        else if (Input.GetKeyDown(KeyCode.Space) && NextSceneGo)
+        {
+           //Debug.Log("???");
+           //AllSceneManager.LoadNewScene("2GothicGlam");
+        }
+        else
+        {
+            // disable input when dialogue is playing
         }
     }
 
@@ -156,13 +170,14 @@ public class DialogueManagerScript : MonoBehaviour
 
             displayLineCoroutine = StartCoroutine(DisplayText(line));
 
-            Debug.Log("Progress"+line.Substring(1)); // printing text in console
+            //Debug.Log("Progress"+line.Substring(1)); // printing text in console
 
             HandleTags(story.currentTags);
         }
         else
         {
             Debug.Log("no story can coninue");
+            AllSceneManager.LoadNewScene("2GothicGlam");
         }
     }
 
@@ -186,7 +201,9 @@ public class DialogueManagerScript : MonoBehaviour
         {
             textLength = line.Substring(1).Length;
 
-            Debug.Log("Display "+line.Substring(1)); // printing text in console
+            Debug.Log("text length is" + textLength);
+
+            //Debug.Log("Display "+line.Substring(1)); // printing text in console
 
             SwitchPanel(textLength);
 
@@ -204,22 +221,9 @@ public class DialogueManagerScript : MonoBehaviour
             sprModifier = char.Parse(line.Substring(0, 1)); // Get the first char of the line 
 
             dialogueIsPlaying = false;
-
-            
         }
 
     }
-
-    //  Portraits
-
-
-  /*
-    private void SetPortrait()
-    {
-        portraitImage.enabled = true; //Enabled Behaviours are Updated, disabled Behaviours are not
-        portraitImage.sprite = portrait;
-    }
-  */
 
 
     //  Panel
@@ -251,28 +255,35 @@ public class DialogueManagerScript : MonoBehaviour
     {
         foreach (string tag in currentTags)
         { 
-            speaker = GameObject.FindWithTag(tag);
             TagName = tag;
 
             // Get speaker name
             if (TagName == "MommyClone") // if speaker is player
             {
-                namePanel.SetActive(true);
+                speaker = GameObject.FindWithTag("GameManager");
+
                 GameManager gm_script = speaker.GetComponent<GameManager>();
                 speakerName.text = gm_script.firstName;
+
+                namePanel.SetActive(true);
+
+                Debug.Log("first name is" + speakerName.text);
 
                 //speakerName.text = PlayerPrefs.GetString("firstName");
                 //Debug.Log("Player name is" + PlayerPrefs.GetString("firstName"));
             }
-            else if (TagName == "Narrator") // Disable name panel when narrator is speaking
+            else if (TagName == "Narrator") 
             {
-                namePanel.SetActive(false);
+                namePanel.SetActive(false); // Disable name panel when narrator is speaking
             }
-            else // speaker is NPC (tag and name are same string)
+            else 
             {
-                Debug.Log("NPC speaker now");
+                speaker = GameObject.FindWithTag(tag); // speaker is NPC (tag and name are same string)
                 namePanel.SetActive(true);
                 speakerName.text = speaker.name;
+                npcAnim = speaker.GetComponent<Animator>();
+
+                Invoke("TalkStretchAnim", 0.01f);
             }
         }
     }
@@ -308,7 +319,6 @@ public class DialogueManagerScript : MonoBehaviour
     }
 
 
-
     // Hide choices and enable texts
     private void HideChoices()
     {
@@ -324,6 +334,32 @@ public class DialogueManagerScript : MonoBehaviour
         story.ChooseChoiceIndex(choiceIndex);
         ProgressDialogue(); // redirecting to ProgressDialogue after clicking
     }
+
+
+
+    // Animations
+
+    // Arrow Setter
+    public void ArrowAnim(bool dialogueIsPlaying)
+    {
+        this.dialogueIsPlaying = dialogueIsPlaying;
+        arrow.SetActive(!dialogueIsPlaying);
+    }
+
+    // Animation of Talking
+    private void TalkStretchAnim()
+    {
+        npcAnim.SetTrigger("Talk");
+    }
+
+    /*
+  private void SetMommyPortrait()
+  {
+      portraitImage.enabled = true; //Enabled Behaviours are Updated, disabled Behaviours are not
+      portraitImage.sprite = portrait;
+  }
+*/
+
 
 }
 

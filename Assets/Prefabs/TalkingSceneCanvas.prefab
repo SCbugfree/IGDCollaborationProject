@@ -130,18 +130,17 @@ MonoBehaviour:
   spr_Panel2: {fileID: 1758831835, guid: b7a06d740d8ca4d30aa2871b15c0a672, type: 3}
   spr_Panel3: {fileID: 1051176775, guid: b7a06d740d8ca4d30aa2871b15c0a672, type: 3}
   spr_ChoicePanel: {fileID: 670578303, guid: ad32d14a5fc7946f1b2a7ce5f677435c, type: 3}
-  spr_namePanel1: {fileID: 21300000, guid: bd03d4cff52ad426a88ef2d7dfaad52a, type: 3}
-  spr_namePanel2: {fileID: 21300000, guid: 027ca242fa2814a47ac2c4a8a1c7d19a, type: 3}
-  spr_namePanel3: {fileID: 21300000, guid: 1697e28fae9aa45098c211f5d3322061, type: 3}
+  arrow: {fileID: 8192548386139549528}
   dialogueText: {fileID: 3625347968877141186}
   speakerName: {fileID: 4906915488000042526}
   image_NPC1: {fileID: 0}
-  image_NPC2: {fileID: 0}
   image_Player: {fileID: 0}
   choiceArray:
   - {fileID: 4906915486905793073}
   - {fileID: 4906915488179971024}
   - {fileID: 4906915486867878075}
+  textL1: 16
+  textL2: 32
   INKJSON: {fileID: 4900000, guid: c840deb3eee544fdc84d6415c5fc0e6b, type: 3}
   TagName: 
   sprModifier: 0
@@ -157,6 +156,7 @@ GameObject:
   - component: {fileID: 4906915486279897624}
   - component: {fileID: 4906915486279897625}
   - component: {fileID: 1476966613}
+  - component: {fileID: 5739500365464635133}
   m_Layer: 5
   m_Name: Amelia
   m_TagString: Amelia
@@ -236,6 +236,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npc_sprites: []
   dms: {fileID: 0}
+--- !u!95 &5739500365464635133
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4906915486279897628}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 50495af2af9534707be1b3208319b646, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4906915486361453660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1119,7 +1140,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.895}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -598, y: 105}
+  m_AnchoredPosition: {x: -598, y: 115}
   m_SizeDelta: {x: -802.6858, y: 314.7196}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4906915487396293773
@@ -1334,7 +1355,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Player
+  m_text: PlayerName
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1707,7 +1728,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.1483, y: 3}
+  m_AnchoredPosition: {x: -1.1483, y: 43}
   m_SizeDelta: {x: 1259.7035, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6727051940491609902
@@ -1765,8 +1786,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

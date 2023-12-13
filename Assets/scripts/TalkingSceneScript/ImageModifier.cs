@@ -47,31 +47,26 @@ public class ImageModifier : MonoBehaviour
     //Change the corresponding portrait according to the first char in a line
     public Sprite SwitchImage(char sprMod)
     {
-
         switch (sprMod)
         {
             // Neutral(deafult) 
             case '%':
-                Debug.Log("Portrait1  on Display");
                 return npc_sprites[0];
 
             // Happy
             case '$':
-                Debug.Log("Portrait2 on Display");
                 return npc_sprites[1];
 
             // Uspset
             case '¥':
-                Debug.Log("Portrait3 on Display");
                 return npc_sprites[1];
 
             //Shy
             case '&':
-                Debug.Log("Portrait4 on Display");
                 return npc_sprites[1];
-            
+
+            // No sprite
             default:
-                Debug.Log("Portrait1 on Display");
                 return npc_sprites[0];
         }
     }
