@@ -6,17 +6,17 @@
 
 !It hasn’t helped that Amelia has been non-stop begging to go to the mall. #Narrator
 
-?Mom, can we please go to Gothic Glam! I can’t find my favorite record in all these boxes… #Amelia
+%Mom, can we please go to Gothic Glam! I can’t find my favorite record in all these boxes… #Amelia
 
-!Maybe it’s in one of these boxes. Just let me finish unpacking. #Player
+%Maybe it’s in one of these boxes. Just let me finish unpacking. #Player
 
-?But mom… We could even get a pretzel as a reward for unpacking! #Amelia
+%But mom… We could even get a pretzel as a reward for unpacking! #Amelia
 
 !Amelia knows my weak points… I love those damn mall pretzels. #Narrator
 
-!Fine! But don’t even think about trying to buy anything else. One record and pretzels only. #Player
+%Fine! But don’t even think about trying to buy anything else. One record and pretzels only. #Player
 
-?Sounds good! #Amelia
+%Sounds good! #Amelia
 
 -> END
 

@@ -5,7 +5,9 @@
 
 !Thunder cracks and a door bursts open. Appearing from the shadows I see… #Narrator
 
-@Jade? #Player
+%Jade? #Player
+
+!Outfit Change
 
 %Um… hey… #Jade
 
@@ -17,62 +19,62 @@
 
 %I wear tennis shoes to work and I listen to Bruce Springsteen. I enjoy going to the hardware store and looking at storage solutions. And I… volunteer at an animal shelter in my spare time. #Jade
 
-%I’m boring. #Jade
+¥I’m boring. #Jade
 
 %I’m fascinated with Victorian history and the Goth lifestyle, that much is true. It’s just… not all that I am. And I need you to know that. #Jade
 
-!Oh, I uh… #Player
+%Oh, I uh… #Player
 
 %I, um… completely understand if you… aren’t interested. In me. Anymore. #Jade
 
-@What? #Player
+%What? #Player
 
-@Am I… missing something here? #Player
+%Am I… missing something here? #Player
 
-%I’m not a cool Goth princess. I’m boring! I own five pairs of tennis shoes! I put my hair up! Don’t you care? #Jade
+¥I’m not a cool Goth princess. I’m boring! I own five pairs of tennis shoes! I put my hair up! Don’t you care? #Jade
 
 !She looks so nervous. #Narrator
 
-@Jade, do you really think I only like you because of all the goth stuff? That’s all cool. But the best thing about you is how passionate you are about the things you love. #Player
+%Jade, do you really think I only like you because of all the goth stuff? That’s all cool. But the best thing about you is how passionate you are about the things you love. #Player
 
-@History, art, Victorian fashion, animals, storage solutions…  it doesn’t matter what it is. You care. And that’s awesome. #Player
+%History, art, Victorian fashion, animals, storage solutions…  it doesn’t matter what it is. You care. And that’s awesome. #Player
 
-@And also, the ponytail is cute. #Player
+%And also, the ponytail is cute. #Player
 
 %You don’t think I’m… boring? At all? #Jade
 
-@If you’re boring, then I don’t know what that makes me. #Player
+%If you’re boring, then I don’t know what that makes me. #Player
 
-@I spend too much time online shopping for vacuums. I get excited to mow my lawn on Saturdays. I get cranky about commercials being too loud. I’ve been thinking about making my own peanut butter. #Player
+%I spend too much time online shopping for vacuums. I get excited to mow my lawn on Saturdays. I get cranky about commercials being too loud. I’ve been thinking about making my own peanut butter. #Player
 
 %Then maybe… we can be boring together. #Jade
 
-@... #Player
+%... #Player
 
-@It would never be boring if it was with you. #Player
+%It would never be boring if it was with you. #Player
 
 !Jade suddenly closes the gap between us and pulls me into a hug. She buries her face in my shoulder. Her hair smells like lavender and rosemary. #Narrator
 
-%I was scared you wouldn’t like me. #Jade
+&I was scared you wouldn’t like me. #Jade
 
-@Quite the opposite. #Player
+%Quite the opposite. #Player
 
 !Jade pulls away for a second and looks me in the eyes. Her eyes are so dark and soulful. #Narrator
 
-%May I kiss you? #Jade
+&May I kiss you? #Jade
 
-@Verily, you may take upon yourself the… #Player
+%Verily, you may take upon yourself the… #Player
 
-@You know what? Just kiss me. #Player
+%You know what? Just kiss me. #Player
 
 !She smiles slightly and leans in, giving me a gentle kiss. #Narrator
 
 !Jade pulls away and gives me an intense look. #Narrator
 
-%Do you… want to… #Jade
+&Do you… want to… #Jade
 
-%Be my girlfriend? #Jade
+&Be my girlfriend? #Jade
 
-@YES! #Player
+%YES! #Player
 
 -> END

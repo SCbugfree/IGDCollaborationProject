@@ -18,7 +18,7 @@
 ->CHOICEMADE
 
 == Good ==
-%I pinned them all myself. Maybe I could show you some time. #Jade
+$I pinned them all myself. Maybe I could show you some time. #Jade
 ->CHOICEMADE
 
 == Neutral ==
@@ -30,19 +30,19 @@
 
 !I follow Jade to her sitting room, where finger foods have already been set out upon a beautiful, tiered silver tray. I take a seat on one of the high backed chairs as Jade pours and serves me some tea. #Narrator
 
-@I can’t believe we’re having High Tea. #Player
+%I can’t believe we’re having High Tea. #Player
 
 !Jade smiles to herself. #Narrator
 
-@What? #Player
+%What? #Player
 
 %It is a common misconception that high tea refers to the wealth or class of the people enjoying it, when in fact the “high” refers to both the later time of day that the working class had to enjoy tea and the height of the tables on which they’re served. #Jade
 
-@Oh. #Player
+%Oh. #Player
 
 %My dear friend, we’re currently enjoying Afternoon Tea. #Jade
 
-@That’s… informative. #Player
+%That’s… informative. #Player
 
 !Jade takes a seat next to me and serves me a tiny sandwich. #Narrator
 
@@ -54,7 +54,7 @@
 * [I like your cape.] -> Bad2
 
 == Good2 ==
-%Th…thank you. No one’s ever complimented my home before. #Jade
+&Th…thank you. No one’s ever complimented my home before. #Jade
 -> CHOICEMADE2
 
 == Neutral2 ==
@@ -62,35 +62,35 @@
 -> CHOICEMADE2
 
 == Bad2 ==
-%It’s a cloak, actually. But thank you. Victorian fashion is very important to me. #Jade
+¥It’s a cloak, actually. But thank you. Victorian fashion is very important to me. #Jade
 -> CHOICEMADE2
 
 == CHOICEMADE2 ==
-@What got you so interested in Goth stuff? #Player
+%What got you so interested in Goth stuff? #Player
 
 %Well, when I was a young girl, my father – #Jade
 
-@Did he take you into the city? #Player
+%Did he take you into the city? #Player
 
-%Sorry? #Jade
+¥Sorry? #Jade
 
-@Haha, did you guys see a marching band? #Player
+%Haha, did you guys see a marching band? #Player
 
 %I’m afraid I don’t understand. #Jade
 
-@..you’re serious? #Player
+%..you’re serious? #Player
 
 %Of course. #Jade
 
-@But, it’s… you know. The song. Amelia made me listen to it. #Player
+%But, it’s… you know. The song. Amelia made me listen to it. #Player
 
 %I’d love to see a marching band. #Jade
 
-@… #Player
+¥… #Player
 
 %Nevertheless, I’ve always had a love for art, history, and fashion. What started off as a small hobby of collecting taxidermied animals grew into sort of an obsession. It’s a privilege to be able to appreciate the lies and culture of those who came before us, I think. #Jade
 
-@Why not go all the way? #Player
+%Why not go all the way? #Player
 
 %I like not dying when I catch a cold. #Jade
 
@@ -112,15 +112,15 @@
 * [I learned how to juggle once.] -> Choice3
 
 == Choice1 ==
-@Soap is… uh… an important advancement in modern society. Getting rid of germs and stuff. I would say that the people who make soap are… the true heroes here. To watch them work… is an honor. #Player
+%Soap is… uh… an important advancement in modern society. Getting rid of germs and stuff. I would say that the people who make soap are… the true heroes here. To watch them work… is an honor. #Player
 -> CHOICEMADE3
 
 == Choice2 ==
-@The uh… written word fascinates me. We spend so much time using words, you know? And uh… I think people would appreciate them more if they had to un-jumble them. #Player
+%The uh… written word fascinates me. We spend so much time using words, you know? And uh… I think people would appreciate them more if they had to un-jumble them. #Player
 -> CHOICEMADE3
 
 == Choice3 ==
-@Gravity is an interesting thing, and um, I believe juggling is the pinnacle of humankind’s interaction with the… gravitational arts. #Player
+%Gravity is an interesting thing, and um, I believe juggling is the pinnacle of humankind’s interaction with the… gravitational arts. #Player
 -> CHOICEMADE3
 
 == CHOICEMADE3 ==
@@ -130,17 +130,17 @@
 
 !I look at the time, and the grandfather clock is about to strike eleven. #Narrator
 
-@I have to go, but it was really nice talking to you. #Player
+%I have to go, but it was really nice talking to you. #Player
 
 %I must agree, it was intriguing hearing you talk about the thing you’re passionate about, and quite honestly, it was rather attractive. #Jade
 
 !My cheeks turn red. #Narrator
 
-@I hope to see you sometime later. #Player
+%I hope to see you sometime later. #Player
 
 %Perhaps you can visit my place of work next. I have something I would like to show you then. #Jade
 
-@Sounds good! #Player
+%Sounds good! #Player
 
 !I giggle inside as Jade leads me out of her estate. I hope I can see her again. #Narrator
 
