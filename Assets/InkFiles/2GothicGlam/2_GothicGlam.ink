@@ -1,6 +1,8 @@
 //This is the file storing dialogues in Scene2: Gothic Glam
 // !Narrator @Player #Amelia/Daughter, %Jade/Mommy 1, ^: Mommy 2, &: NPC/No image
-
+VAR Dialogue = ""
+VAR symbol = ""
+VAR Response = ""
 
 !Welcome to Gothic Glam. Let me know if you need anything! #Employee
 
@@ -24,31 +26,41 @@
 
 %Wow, your daughter has good taste! My Synthetic Love rocks. #MommyClone
 
-%I am quite enamored with their music as well… What’s the song you would deem your favorite? #Jade
-
 -> MSL_Choice
 
-== MSL_Choice ==
-+ [Adolescents] -> Bad
-+ [Greetings to the Dark March] -> Good
-+ [Love] -> Neutral
+=== MSL_Choice ===
+%I am quite enamored with their music as well… What’s the song you would deem your favorite? #Jade
 
-== Bad ==
-¥Oh... Interesting. #Jade
-->CHOICEMADE
+    +[Adolescents]
+        ~ Dialogue = "Adolescents"
+        ~ symbol = "¥"
+        ~ Response = "Oh… Interesting."
+        -> CHOICEMADE
+        
+    +[Greetings to the Dark March]
+        ~ Dialogue = "Greetings to the Dark March"
+        ~ symbol = "$"
+        ~ Response = " I quite like that one!"
+        -> CHOICEMADE
+        
+    +[Love]
+        ~ Dialogue = "Love"
+        ~ symbol = "!"
+        ~ Response = "That one is fine."
+        -> CHOICEMADE
 
-== Good ==
-$I quite like that one! #Jade
-->CHOICEMADE
+=== CHOICEMADE ===
+!{Dialogue} #MommyClone
+-> FEEDBACK
 
-== Neutral ==
-%That one is fine. #Jade
-->CHOICEMADE
+=== FEEDBACK ===
+{symbol}{Response} #Jade
+-> CONTINUE
 
-== CHOICEMADE ==
+=== CONTINUE ===
 %In my humble opinion, Werewolf Dollars is superb. #Jade
 
-%Would you care to join my daughter and I for a pretzel? #Player
+%Would you care to join my daughter and I for a pretzel? #MommyClone
 
 !Oh god, I probably made it too obvious that I’m trying to flirt with her… #Narrator
 
