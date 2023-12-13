@@ -1,4 +1,4 @@
-﻿//This is the file storing dialogues in Ending1Scene1:YourHouse
+//This is the file storing dialogues in Ending1Scene1:YourHouse
 // !Narrator @Player #Amelia/Daughter, %Jade/Mommy 1, ^: Mommy 2, &: NPC/No image
 
 !I texted Jade, asking her if she wanted to meet up. #Narrator

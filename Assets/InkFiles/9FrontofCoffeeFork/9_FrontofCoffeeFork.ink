@@ -1,4 +1,4 @@
-﻿//This is the file storing dialogues in Scene9: FrontofCoffeeFork
+//This is the file storing dialogues in Scene9: FrontofCoffeeFork
 // !Narrator @Player #Amelia/Daughter, %Jade/Mommy 1, ^: Mommy 2, &: NPC/No image
 
 !I show up to the Coffee Fork at 8 in what I hope is concert-appropriate attire. I see Madi out front locking the door to the shop. #Narrator
@@ -27,11 +27,11 @@ $I detect sarcasm. #Madi
 == CHOICEMADE ==
 %I get to take you to your first concert in a long time? This is gonna be awesome! Just hang with me, and you’ll be good. This scene is super supportive. It’ll be a blast. #Madi
 
-%Quick question? #Player
+%Quick question? #MommyClone
 
 %Shoot. #Madi
 
-%What is... scene? #Player
+%What is... scene? #MommyClone
 
 $Madi lets out a tiny laugh. #Narrator
 
@@ -39,7 +39,7 @@ $Madi lets out a tiny laugh. #Narrator
 
 %Madi looks off into middle distance. She says nothing, but I can tell she’s thinking, “never again.” #Narrator
 
-%That's confusing. #Player
+%That's confusing. #MommyClone
 
 %You’ll get it. The important thing tonight is that you enjoy yourself. C’mon, let’s head to the show. #Madi
 

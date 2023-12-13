@@ -1,4 +1,4 @@
-﻿//This is the file storing dialogues in Scene10: Concert
+//This is the file storing dialogues in Scene10: Concert
 // !Narrator @Player #Amelia/Daughter, %Jade/Mommy 1, ^: Mommy 2, &: NPC/No image
 
 !After waiting in a short line to get in, we finally find ourselves in a small venue with a stage at one end and a bar at the other. Most people here are closer to Amelia’s age than mine. I suddenly feel very out of place. #Narrator
@@ -13,11 +13,11 @@
 
 %I get nervous when people surprise high-five me. #Madi
 
-%Me too. #Player
+%Me too. #MommyClone
 
 %I’m like a small animal. Loud noises and large groups of people frighten me. #Madi
 
-%Do you also enjoy curling up in a patch of sunlight to take a nap? #Player
+%Do you also enjoy curling up in a patch of sunlight to take a nap? #MommyClone
 
 $That’s my favorite thing to do. #Madi
 
@@ -35,7 +35,7 @@ $That’s my favorite thing to do. #Madi
 
 !Madi and I line up at the bar in the back, where a couple of the older concert goers hang out. A couple more people notice Madi and tip their drinks at her. #Narrator
 
-%Seems like you’re a popular gal out here. #Player
+%Seems like you’re a popular gal out here. #MommyClone
 
 %Ah yeah, I go to a lot of shows. This is a really cool spot. #Madi
 
@@ -47,9 +47,9 @@ $That’s my favorite thing to do. #Madi
 
 ¥... #Madi
 
-%... #Player
+%... #MommyClone
 
-%Goddammit where do I put my tongue. #Player
+%Goddammit where do I put my tongue. #MommyClone
 
 ^See... #Madi
 
@@ -57,7 +57,7 @@ $That’s my favorite thing to do. #Madi
 
 ^Just you wait… #Madi
 
-%This… scene… seems really friendly. I don’t know why people… wouldn’t want to admit that they listen to it. #Player
+%This… scene… seems really friendly. I don’t know why people… wouldn’t want to admit that they listen to it. #MommyClone
 
 ^Ha! The concert is about to start, let’s go. #Madi
 
@@ -69,15 +69,15 @@ $That’s my favorite thing to do. #Madi
 
 ¥Oh no, these guys. #Madi
 
-%What? #Player
+%What? #MommyClone
 
 !Without time to respond, the band starts playing the most cacophonous noise I’ve ever heard. #Narrator
 
-%WHAT IS THIS? #Player
+%WHAT IS THIS? #MommyClone
 
 !Madi doesn’t say anything, she just hands me ear plugs. #Narrator
 
-%THANKS! #Player
+%THANKS! #MommyClone
 
 !I put the ear plugs in and whatever the hell is assaulting my ears gets a lot quieter. For a band this bad, they sure do seem to be having fun. I guess that’s what really matters. #Narrator
 
@@ -85,7 +85,7 @@ $That’s my favorite thing to do. #Madi
 
 !The set seems to go on forever. There’s no breaks in the songs and I think one of the band member’s jobs is specifically just to burn poetry onstage. I turn to Madi and try to start a conversation. #Narrator
 
-%SO YOU GO TO A LOT OF CONCERTS OUT HERE, HUH? #Player
+%SO YOU GO TO A LOT OF CONCERTS OUT HERE, HUH? #MommyClone
 
 %WHAT? #Madi
 
@@ -96,7 +96,7 @@ $That’s my favorite thing to do. #Madi
 * [Drop it] -> Bad
 
 == Good ==
-%SO! YOU! GO! TO! A! LOT! OF! CONCERTS! OUT! HERE! HUH! #Player
+%SO! YOU! GO! TO! A! LOT! OF! CONCERTS! OUT! HERE! HUH! #MommyClone
 $Haha, yeah! #Madi
 -> CHOICEMADE
 
@@ -116,11 +116,11 @@ $Haha, yeah! #Madi
 
 %Man, that was… something. #Madi
 
-%I just… have a lot of questions that I know I’ll never get the answer to. #Player
+%I just… have a lot of questions that I know I’ll never get the answer to. #MommyClone
 
 %Oh yeah, he sprains his ankle at every show. They were being real about that. #Madi
 
-%... #Player
+%... #MommyClone
 
 !With the concert over, the crowd starts making their way to the exit. #Narrator
 

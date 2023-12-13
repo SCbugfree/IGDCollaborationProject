@@ -22,6 +22,8 @@ TagManager:
   - Jade
   - Madi
   - GameManager
+  - Lilith
+  - Camilla
   layers:
   - Default
   - TransparentFX

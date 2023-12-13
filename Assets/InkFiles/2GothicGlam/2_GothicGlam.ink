@@ -10,9 +10,9 @@
 
 !I stare down this one shirt based on my favorite band, My Synthetic Love, when… #Narrator
 
-¥Oops, sorry! #Jade
+%Oops, sorry! #Jade
 
-%Excuse me, I was standing- #Player
+%Excuse me, I was standing- #MommyClone
 
 !I look up at who ran into me, and she’s beautiful. Her jet black hair is perfectly silky, and her dark eye makeup makes her eyes shine. #Narrator
 
@@ -22,7 +22,7 @@
 
 !She points up to the exact same band shirt I was looking at. #Narrator
 
-%Wow, your daughter has good taste! My Synthetic Love rocks. #Player
+%Wow, your daughter has good taste! My Synthetic Love rocks. #MommyClone
 
 %I am quite enamored with their music as well… What’s the song you would deem your favorite? #Jade
 
@@ -68,11 +68,11 @@ $I quite like that one! #Jade
 
 %Oh is it that lady with the Victorian outfit? She’s pretty. #Amelia
 
-%Yeah! She invited me over to her house tonight. Let me introduce you to her! #Player
+%Yeah! She invited me over to her house tonight. Let me introduce you to her! #MommyClone
 
 !I grab Amelia’s vinyl, and walk over to Jade who’s standing outside the Gothic Glam door with her daughter. #Narrator
 
-%Jade, Lilith! This is Amelia. #Player
+%Jade, Lilith! This is Amelia. #MommyClone
 
 %Amelia shyly waves to them. #Narrator
 
@@ -82,6 +82,6 @@ $I quite like that one! #Jade
 
 !I feel a sense of competitiveness overtake me. #Narrator
 
-%Well Amelia recently got a scholarship after she submitted some of her photographs. #Player
+%Well Amelia recently got a scholarship after she submitted some of her photographs. #MommyClone
 
 -> END

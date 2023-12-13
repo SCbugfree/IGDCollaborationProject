@@ -1,4 +1,4 @@
-﻿//This is the file storing dialogues in Ending1Scene2:Jade'sManor
+//This is the file storing dialogues in Ending1Scene2:Jade'sManor
 // !Narrator @Player #Amelia/Daughter, %Jade/Mommy 1, ^: Mommy 2, &: NPC/No image
 
 !Without any of the creepy ambiance like last time, Jade let me into her home. #Narrator

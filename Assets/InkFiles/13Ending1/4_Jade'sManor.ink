@@ -1,11 +1,11 @@
-﻿//This is the file storing dialogues in Ending1Scene4:Jade'sManor
+//This is the file storing dialogues in Ending1Scene4:Jade'sManor
 // !Narrator @Player #Amelia/Daughter, %Jade/Mommy 1, ^: Mommy 2, &: NPC/No image
 
 %Just one moment… #Jade
 
 !Thunder cracks and a door bursts open. Appearing from the shadows I see… #Narrator
 
-%Jade? #Player
+%Jade? #MommyClone
 
 !Outfit Change
 
@@ -23,49 +23,49 @@
 
 %I’m fascinated with Victorian history and the Goth lifestyle, that much is true. It’s just… not all that I am. And I need you to know that. #Jade
 
-%Oh, I uh… #Player
+%Oh, I uh… #MommyClone
 
 %I, um… completely understand if you… aren’t interested. In me. Anymore. #Jade
 
-%What? #Player
+%What? #MommyClone
 
-%Am I… missing something here? #Player
+%Am I… missing something here? #MommyClone
 
 ¥I’m not a cool Goth princess. I’m boring! I own five pairs of tennis shoes! I put my hair up! Don’t you care? #Jade
 
 !She looks so nervous. #Narrator
 
-%Jade, do you really think I only like you because of all the goth stuff? That’s all cool. But the best thing about you is how passionate you are about the things you love. #Player
+%Jade, do you really think I only like you because of all the goth stuff? That’s all cool. But the best thing about you is how passionate you are about the things you love. #MommyClone
 
-%History, art, Victorian fashion, animals, storage solutions…  it doesn’t matter what it is. You care. And that’s awesome. #Player
+%History, art, Victorian fashion, animals, storage solutions…  it doesn’t matter what it is. You care. And that’s awesome. #MommyClone
 
-%And also, the ponytail is cute. #Player
+%And also, the ponytail is cute. #MommyClone
 
 %You don’t think I’m… boring? At all? #Jade
 
-%If you’re boring, then I don’t know what that makes me. #Player
+%If you’re boring, then I don’t know what that makes me. #MommyClone
 
-%I spend too much time online shopping for vacuums. I get excited to mow my lawn on Saturdays. I get cranky about commercials being too loud. I’ve been thinking about making my own peanut butter. #Player
+%I spend too much time online shopping for vacuums. I get excited to mow my lawn on Saturdays. I get cranky about commercials being too loud. I’ve been thinking about making my own peanut butter. #MommyClone
 
 %Then maybe… we can be boring together. #Jade
 
-%... #Player
+%... #MommyClone
 
-%It would never be boring if it was with you. #Player
+%It would never be boring if it was with you. #MommyClone
 
 !Jade suddenly closes the gap between us and pulls me into a hug. She buries her face in my shoulder. Her hair smells like lavender and rosemary. #Narrator
 
 &I was scared you wouldn’t like me. #Jade
 
-%Quite the opposite. #Player
+%Quite the opposite. #MommyClone
 
 !Jade pulls away for a second and looks me in the eyes. Her eyes are so dark and soulful. #Narrator
 
 &May I kiss you? #Jade
 
-%Verily, you may take upon yourself the… #Player
+%Verily, you may take upon yourself the… #MommyClone
 
-%You know what? Just kiss me. #Player
+%You know what? Just kiss me. #MommyClone
 
 !She smiles slightly and leans in, giving me a gentle kiss. #Narrator
 
@@ -75,6 +75,6 @@
 
 &Be my girlfriend? #Jade
 
-%YES! #Player
+%YES! #MommyClone
 
 -> END

@@ -276,9 +276,14 @@ public class DialogueManagerScript : MonoBehaviour
                 //Invoke("MommyEnterAnim", 0.01f);
 
             }
-            else if (TagName == "Narrator") 
+            else if (TagName == "Narrator")
             {
                 namePanel.SetActive(false); // Disable name panel when narrator is speaking
+            }
+            else if (TagName == "Employee" || TagName == "Boy" || TagName == "LeadSinger")
+            {
+                namePanel.SetActive(true);
+                speakerName.text = TagName;
             }
             else 
             {

@@ -1,4 +1,4 @@
-﻿//This is the file storing dialogues in Scene2: Gothic Glam AFTER Daughter Battle
+//This is the file storing dialogues in Scene2: Gothic Glam AFTER Daughter Battle
 // !Narrator @Player #Amelia/Daughter, %Jade/Mommy 1, ^: Mommy 2, &: NPC/No image
 
 !Well it seems as though both of our daughters are wonderful. #Narrator
@@ -11,7 +11,7 @@
 
 &Perhaps I could take you to my estate later, I believe it will be pleasurable for you. #Jade
 
-%That would be totally cool… #Player
+%That would be totally cool… #MommyClone
 
 !I try to play off my excitement as I can’t wait to hangout more with Jade. #Narrator
 
@@ -21,13 +21,13 @@
 
 %However, I frankly am quite excited to see you tonight. #Jade
 
-%Alright, hope everything goes well at your conference! #Player
+%Alright, hope everything goes well at your conference! #MommyClone
 
 !Amelia and I wave goodbye as Jade and Lilith exit the mall. #Narrator
 
 %I liked them. #Amelia
 
-%Alright Amelia, ready for our shitty mall pretzel! #Player
+%Alright Amelia, ready for our shitty mall pretzel! #MommyClone
 
 %Hell yeah! #Amelia
 

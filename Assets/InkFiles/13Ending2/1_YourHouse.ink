@@ -1,4 +1,4 @@
-﻿//This is the file storing dialogues in Ending2Scene1:YourHouse
+//This is the file storing dialogues in Ending2Scene1:YourHouse
 // !Narrator @Player #Amelia/Daughter, %Jade/Mommy 1, ^: Mommy 2, &: NPC/No image
 
 !Madi and I have spent a lot of time together lately. I go to the Coffee Spoon just to hang out with her. #Narrator

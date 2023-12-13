@@ -1,4 +1,4 @@
-﻿//This is the file storing dialogues in Ending2Scene2:CoffeeFork
+//This is the file storing dialogues in Ending2Scene2:CoffeeFork
 // !Narrator @Player #Amelia/Daughter, %Jade/Mommy 1, ^: Mommy 2, &: NPC/No image
 
 !I’ve never seen the Coffee Fork so packed. I spot familiar faces from our last concert, sipping on caffeinated beverages of choice. A couple of people are setting up onstage. #Narrator
@@ -9,25 +9,25 @@
 
 $Glad you can make it. #Madi
 
-%Wouldn’t miss it for the world, man. #Player
+%Wouldn’t miss it for the world, man. #MommyClone
 
-%You guys need any help? #Player
+%You guys need any help? #MommyClone
 
 %The closing act is Jonathan Jones and the Speakeasy Choir… #Madi
 
-%Yikes. #Player
+%Yikes. #MommyClone
 
 %We need someone to fill their spot… #Madi
 
-%I’ll play! #Player
+%I’ll play! #MommyClone
 
 !WHAT ARE YOU DOING? #Narrator
 
-%Do you have a keyboard around? #Player
+%Do you have a keyboard around? #MommyClone
 
 %Yeah, I have one right here. #Madi
 
-%Then, it’s settled. #Player
+%Then, it’s settled. #MommyClone
 
 !STOP TALKING. CLOSE YOUR MOUTH. #Narrator
 
@@ -53,7 +53,7 @@ $VACANT VEIL!!! #Madi
 
 %Hey, are you doing okay? #Madi
 
-%I’m… here. #Player
+%I’m… here. #MommyClone
 
 %Alright, just making sure. I know you’re gonna do great. #Madi
 
@@ -65,7 +65,7 @@ $VACANT VEIL!!! #Madi
 
 !Everyone cheers as I take the stage. #Narrator
 
-%Uh, hey everybody. Good to be here. Thanks for having me on. Great crowd. #Player
+%Uh, hey everybody. Good to be here. Thanks for having me on. Great crowd. #MommyClone
 
 !The crowd claps politely. I sit down at the piano. #Narrator
 
@@ -81,7 +81,7 @@ $VACANT VEIL!!! #Madi
 
 !We make it to the end of the song in one piece and the crowd goes wild. They chant Madi’s name. #Narrator
 
-%They wanna hear you play! #Player
+%They wanna hear you play! #MommyClone
 
 !Madi smiles. #Narrator
 
@@ -101,11 +101,11 @@ $VACANT VEIL!!! #Madi
 
 !I wait for everyone to praise Madi, and soon enough, people funnel out of the coffee shop. #Narrator
 
-%Thanks for saving me from myself up there. #Player
+%Thanks for saving me from myself up there. #MommyClone
 
 %All in all it ended up being pretty cute. Plus you protected us from Jonatahn Jones and the Speakeasy Choir. #Madi
 
-%Did it feel good to be on stage again? #Player
+%Did it feel good to be on stage again? #MommyClone
 
 %Yeah, it really did. I stopped playing after my husband died. #Madi
 
@@ -117,7 +117,7 @@ $VACANT VEIL!!! #Madi
 
 %Until tonight. #Madi
 
-%What changed? #Player
+%What changed? #MommyClone
 
 &...You. #Madi
 
@@ -127,9 +127,9 @@ $VACANT VEIL!!! #Madi
 
 &But when I got up there and started playing, for the first time in forever, I felt comfortable. Your strength gave me strength. Whether you were trying or not, you got me out of my comfort zone. So… thank you. #Madi
 
-&I’m glad I could help. You coming onstage… I didn’t think you would stick your neck out for me like that. Especially considering… all of this. #Player
+&I’m glad I could help. You coming onstage… I didn’t think you would stick your neck out for me like that. Especially considering… all of this. #MommyClone
 
-%That really means a lot to me. #Player
+%That really means a lot to me. #MommyClone
 
 &Well… you mean a lot to me. #Madi
 
@@ -139,10 +139,10 @@ $VACANT VEIL!!! #Madi
 
 &Oh god! I’m sorry! I… uh… Sorry I can’t believe I just did that. #Madi
 
-%Neither can I, but I’m glad you did. #Player
+%Neither can I, but I’m glad you did. #MommyClone
 
 &Will you… be my girlfriend? #Madi
 
-%Yes… I think we make a pretty good team. #Player
+%Yes… I think we make a pretty good team. #MommyClone
 
 -> END
