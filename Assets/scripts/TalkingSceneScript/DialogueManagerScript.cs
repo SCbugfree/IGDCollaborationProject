@@ -31,11 +31,10 @@ public class DialogueManagerScript : MonoBehaviour
     [SerializeField] private TextMeshProUGUI speakerName; // visually display speaker name
 
 
-    [Header("NPC and Player Images")]
+   // [Header("NPC and Player Images")]
 
-    [SerializeField] private Image image_NPC1;
-    //[SerializeField] private Image image_NPC2;
-    [SerializeField] private Image image_Player; //get player
+    //[SerializeField] private Image image_NPC1;
+    //[SerializeField] private Image image_Player; //get player
 
 
     [Header("Choices")]
@@ -47,6 +46,9 @@ public class DialogueManagerScript : MonoBehaviour
 
     public float textL1 = 75;
     public float textL2 = 120;
+
+    [Header("Next Scene is")]
+    public string nextSceneName;
 
     //[Header("Name Text Length Indicator")]
 
@@ -139,11 +141,6 @@ public class DialogueManagerScript : MonoBehaviour
         {
             ProgressDialogue();
         }
-        else if (Input.GetKeyDown(KeyCode.Space) && NextSceneGo)
-        {
-           //Debug.Log("???");
-           //AllSceneManager.LoadNewScene("2GothicGlam");
-        }
         else
         {
             // disable input when dialogue is playing
@@ -181,7 +178,7 @@ public class DialogueManagerScript : MonoBehaviour
         else
         {
             Debug.Log("no story can coninue");
-            AllSceneManager.LoadNewScene("2GothicGlam");
+            AllSceneManager.LoadNewScene(nextSceneName);
         }
     }
 

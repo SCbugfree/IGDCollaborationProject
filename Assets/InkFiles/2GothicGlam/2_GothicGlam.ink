@@ -29,9 +29,9 @@
 -> MSL_Choice
 
 == MSL_Choice ==
-* [Adolescents] -> Bad
-* [Greetings to the Dark March] -> Good
-* [Love] -> Neutral
++ [Adolescents] -> Bad
++ [Greetings to the Dark March] -> Good
++ [Love] -> Neutral
 
 == Bad ==
 ¥Oh... Interesting. #Jade
