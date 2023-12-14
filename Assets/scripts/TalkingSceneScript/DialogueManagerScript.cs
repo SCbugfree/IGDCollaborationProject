@@ -31,7 +31,7 @@ public class DialogueManagerScript : MonoBehaviour
     [SerializeField] private TextMeshProUGUI speakerName; // visually display speaker name
 
 
-   // [Header("NPC and Player Images")]
+    // [Header("NPC and Player Images")]
 
     //[SerializeField] private Image image_NPC1;
     //[SerializeField] private Image image_Player; //get player
@@ -64,6 +64,8 @@ public class DialogueManagerScript : MonoBehaviour
 
     public char sprModifier;
 
+    public AnimationCurve shakeCurve;
+
 
     private Story story;
 
@@ -89,7 +91,7 @@ public class DialogueManagerScript : MonoBehaviour
 
     //private float nameLength;
 
-   
+
     void Awake()
     {
         if (instance != null)
@@ -102,7 +104,7 @@ public class DialogueManagerScript : MonoBehaviour
 
     void Start()
     {
-        
+
         dialogueIsPlaying = false;
 
         // set up chociesText as an array for TextMeshProUGUI that will contain all chocies
@@ -255,7 +257,7 @@ public class DialogueManagerScript : MonoBehaviour
     private void HandleTags(List<string> currentTags)
     {
         foreach (string tag in currentTags)
-        { 
+        {
             TagName = tag;
 
             // Get speaker name
@@ -282,7 +284,7 @@ public class DialogueManagerScript : MonoBehaviour
                 namePanel.SetActive(true);
                 speakerName.text = TagName;
             }
-            else 
+            else
             {
                 speaker = GameObject.FindWithTag(tag); // speaker is NPC (tag and name are same string)
                 namePanel.SetActive(true);
@@ -373,8 +375,32 @@ public class DialogueManagerScript : MonoBehaviour
     */
 
 
+    // Screenshakes
 
+    // Screenshake function
 
+    /*
+    public AnimationCurve curve;
+    public float timeShake = 1f;
 
+    //somewhere before: StartCoroutine(Shaking());
+
+    IEnumerator Shaking()
+    {
+        Vector3 startPos = transform.position;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < timeShake)
+        {
+            elapsedTime += Time.deltaTime;
+            float strength = curve.Evaluate(elapsedTime / timeShake);
+            transform.position = startPos + Random.insideUnitSphere;
+            yield return null;
+        }
+
+        transform.position = startPos;
+    }
+}
+    */
 }
 

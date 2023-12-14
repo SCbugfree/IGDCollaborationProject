@@ -176,6 +176,8 @@ public class GameManager : MonoBehaviour
     }
 
 
+    // Record data
+
     // Record player choices in Mommy customization
     public void GetPlayerBuiltMommy(Sprite[] sprites)
     {

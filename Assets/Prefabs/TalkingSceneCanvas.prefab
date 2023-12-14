@@ -250,17 +250,58 @@ MonoBehaviour:
   arrow: {fileID: 8192548386139549528}
   dialogueText: {fileID: 3625347968877141186}
   speakerName: {fileID: 4906915488000042526}
-  image_NPC1: {fileID: 0}
-  image_Player: {fileID: 0}
   choiceArray:
   - {fileID: 4906915486905793073}
   - {fileID: 4906915488179971024}
   - {fileID: 4906915486867878075}
   textL1: 16
   textL2: 32
+  nextSceneName: 
   INKJSON: {fileID: 4900000, guid: c840deb3eee544fdc84d6415c5fc0e6b, type: 3}
   TagName: 
   sprModifier: 0
+  shakeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.054489136
+      value: 0.0010375977
+      inSlope: 0.06097211
+      outSlope: 0.06097211
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.07681565
+    - serializedVersion: 3
+      time: 0.20590329
+      value: 0.03029951
+      inSlope: -0.049679633
+      outSlope: -0.049679633
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.043187264
+    - serializedVersion: 3
+      time: 0.59219676
+      value: 0.009519619
+      inSlope: -0.029140458
+      outSlope: -0.029140458
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.0006409
+      value: 0.00020599365
+      inSlope: -0.022802692
+      outSlope: -0.022802692
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &4906915486279897628
 GameObject:
   m_ObjectHideFlags: 0
