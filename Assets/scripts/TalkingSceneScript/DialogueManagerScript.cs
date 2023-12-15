@@ -71,7 +71,7 @@ public class DialogueManagerScript : MonoBehaviour
 
     private TextMeshProUGUI[] choicesTexts;
 
-    private Coroutine displayLineCoroutine; //?
+    private Coroutine displayLineCoroutine;
 
     private GameObject speaker; // Track who is speaking
 
@@ -84,8 +84,6 @@ public class DialogueManagerScript : MonoBehaviour
     private Animator npcAnim;
 
     //private Animator mommyAnim;
-
-    private bool NextSceneGo = false;
 
 
 
@@ -126,14 +124,11 @@ public class DialogueManagerScript : MonoBehaviour
     {
         if (story.canContinue)// check if we are in dialogue mode and move through story if we are in a dialogue mode
         {
-            CheckInput();
             ArrowAnim(dialogueIsPlaying);
         }
-        else
-        {
-            NextSceneGo = true;
-            CheckInput();
-        }
+
+        CheckInput();
+
     }
 
     // Check Input
@@ -383,6 +378,7 @@ public class DialogueManagerScript : MonoBehaviour
     public AnimationCurve curve;
     public float timeShake = 1f;
 
+    //or try Invoke
     //somewhere before: StartCoroutine(Shaking());
 
     IEnumerator Shaking()

@@ -214,14 +214,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1476966613, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
-      propertyPath: dms
-      value: 
-      objectReference: {fileID: 1100386494}
-    - target: {fileID: 4906915486361453662, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+    - target: {fileID: 3543731530386957615, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 173
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906915486867878069, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_Colors.m_NormalColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906915486867878074, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1540.8163
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906915486867878074, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 137.7551
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906915486905793072, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1540.8163
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906915486905793072, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 137.7551
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906915486905793075, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_Colors.m_NormalColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906915487188150056, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 73135681487b04ed0b51524ebb99decf, type: 3}
+      objectReference: {fileID: 670578303, guid: ad32d14a5fc7946f1b2a7ce5f677435c, type: 3}
+    - target: {fileID: 4906915487188150057, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1579
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906915487188150057, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 264
+      objectReference: {fileID: 0}
     - target: {fileID: 4906915487529141766, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -314,24 +346,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: TalkingSceneCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 6126597650677328602, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
-      propertyPath: INKJSON
-      value: 
-      objectReference: {fileID: 4900000, guid: 9652d77f4bb894478a0debbd88357e19, type: 3}
-    - target: {fileID: 6126597650677328602, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
-      propertyPath: nextSceneName
-      value: 3OutsideJadeManor
+    - target: {fileID: 4906915488179971026, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_Colors.m_NormalColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906915488179971027, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1540.8163
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906915488179971027, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 137.7551
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
---- !u!114 &1100386494 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6126597650677328602, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
-  m_PrefabInstance: {fileID: 1100386493}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 218cf04f088c44f66b0e0b930f875eb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
