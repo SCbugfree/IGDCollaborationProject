@@ -130,6 +130,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1476966613, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: npc_sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476966613, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: npc_sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 1432d9ccb84ee4baa82d0c96ff458d83, type: 3}
+    - target: {fileID: 1476966613, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: npc_sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 73bc07fb2734b4cf69834f676e7d1389, type: 3}
+    - target: {fileID: 1476966613, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: npc_sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 8438027e2606a4c95a768340af95f2aa, type: 3}
+    - target: {fileID: 1476966613, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: npc_sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 76164fd08ee684dc98c0133a40fc66d9, type: 3}
+    - target: {fileID: 4906915486279897625, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1432d9ccb84ee4baa82d0c96ff458d83, type: 3}
+    - target: {fileID: 4906915486279897628, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_Name
+      value: Jade
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906915486279897628, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_TagString
+      value: Jade
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906915486279897631, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 447.87878
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906915486279897631, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 904.8485
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906915486279897631, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 452
+      objectReference: {fileID: 0}
     - target: {fileID: 4906915486361453662, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -225,6 +269,14 @@ PrefabInstance:
     - target: {fileID: 4906915487529141770, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
       propertyPath: m_Name
       value: TalkingSceneCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6126597650677328602, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: INKJSON
+      value: 
+      objectReference: {fileID: 4900000, guid: 48b93140ea0454cd5b818e1460d0e29a, type: 3}
+    - target: {fileID: 6126597650677328602, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: nextSceneName
+      value: 6YourHouse
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}

@@ -302,9 +302,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4906915487529141767, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 414734084}
     - target: {fileID: 4906915487529141770, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
       propertyPath: m_Name
       value: TalkingSceneCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6126597650677328602, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: INKJSON
+      value: 
+      objectReference: {fileID: 4900000, guid: 9d9f6f326520040f99770a7f21385f9a, type: 3}
+    - target: {fileID: 6126597650677328602, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: nextSceneName
+      value: 7CoffeeShop
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}

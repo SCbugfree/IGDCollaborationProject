@@ -5,35 +5,14 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/StartScene.unity
-    guid: 66df275173bbf46c0b8e2182a85ffef9
+    path: Assets/Scenes/1YourNewHouseScene.unity
+    guid: 8fb21eb9e54e14f189ee023e16be3729
   - enabled: 1
-    path: Assets/Scenes/IsabelScene.unity
-    guid: 85ea777a575a0454bb2561317576c534
-  - enabled: 1
-    path: Assets/Scenes/NameThatMom.unity
-    guid: fc4808bfc20cc42c6821094d3c3f267a
-  - enabled: 1
-    path: Assets/Scenes/2.2GothicGlam 1.unity
+    path: Assets/Scenes/2AGothicGlam.unity
     guid: b8a5427e352f44312971e9112fe70b2c
-  - enabled: 0
-    path: Assets/Scenes/QiqiScene.unity
-    guid: 3ef2beb39464a490c84d9f7ff613a836
-  - enabled: 0
-    path: Assets/Scenes/CrisenScene.unity
-    guid: 4642a66d3b35c445c9e7393bcee52cfa
-  - enabled: 0
-    path: Assets/Scenes/SallyScene.unity
-    guid: 4da7d2d952ea6436cb677fa7619af78a
   - enabled: 1
-    path: Assets/Scenes/13A2JadeManor.unity
-    guid: 8f659ef71bcb0499493957405d5f719f
-  - enabled: 1
-    path: Assets/Scenes/2GothicGlam.unity
+    path: Assets/Scenes/2BGothicGlam.unity
     guid: 90cefe7f9be3e4384b5626075a6d0a98
   - enabled: 1
     path: Assets/Scenes/3OutsideJadeManor.unity
@@ -65,34 +44,46 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/12Transition.unity
     guid: ffc69d46ae66644118b8bcdf5211515b
-  - enabled: 0
-    path: Assets/Scenes/14Ending1.unity
-    guid: 1261056eeec704ddd816f7c66838a840
-  - enabled: 0
-    path: Assets/Scenes/13Ending2.unity
-    guid: 5c08e1deb8e1a4227b3038ceb6f5f55d
-  - enabled: 1
-    path: Assets/Scenes/ChooseDateScene.unity
-    guid: e6e861ece416c43e4b14e64902a40524
-  - enabled: 1
-    path: Assets/Scenes/CustomizationScene.unity
-    guid: b6741ee40e0404eff8a7d4c599efe642
   - enabled: 1
     path: Assets/Scenes/13A1YourHouse.unity
     guid: 394a1161687ba43bfbf783395278bc42
   - enabled: 1
-    path: Assets/Scenes/13A3JMBlackScreen 1.unity
+    path: Assets/Scenes/13A2JadeManor.unity
+    guid: 8f659ef71bcb0499493957405d5f719f
+  - enabled: 1
+    path: Assets/Scenes/13A3JMBlackScreen.unity
     guid: 571bf566f53a04aa7a2f5f6ee62f5521
   - enabled: 1
     path: Assets/Scenes/13A4JadeManor.unity
     guid: 428ac3ddaf1334964a0cb426ee98bae2
   - enabled: 1
-    path: Assets/Scenes/13B1YourHouse 1.unity
+    path: Assets/Scenes/13B1YourHouse.unity
     guid: 0efec570b330c4cc4b868d17991d678c
   - enabled: 1
     path: Assets/Scenes/13B2CoffeeFork.unity
     guid: 27ce6077c80564c59b0921dfa7d65c4f
-  - enabled: 0
-    path: Assets/Scenes/TalkingScene.unity
-    guid: 5d146e0f3657b4e76a346471cd898186
+  - enabled: 1
+    path: Assets/Scenes/ChooseDateScene.unity
+    guid: e6e861ece416c43e4b14e64902a40524
+  - enabled: 1
+    path: Assets/Scenes/CrisenScene.unity
+    guid: 4642a66d3b35c445c9e7393bcee52cfa
+  - enabled: 1
+    path: Assets/Scenes/CustomizationScene.unity
+    guid: b6741ee40e0404eff8a7d4c599efe642
+  - enabled: 1
+    path: Assets/Scenes/IsabelScene.unity
+    guid: 85ea777a575a0454bb2561317576c534
+  - enabled: 1
+    path: Assets/Scenes/JadeDC.unity
+    guid: 1ff232c8ad94b461a8f1ff99d0393a4e
+  - enabled: 1
+    path: Assets/Scenes/MadiDC.unity
+    guid: 9e8545f349f5d4630a39348104b5222a
+  - enabled: 1
+    path: Assets/Scenes/NameThatMom.unity
+    guid: fc4808bfc20cc42c6821094d3c3f267a
+  - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: 66df275173bbf46c0b8e2182a85ffef9
   m_configObjects: {}

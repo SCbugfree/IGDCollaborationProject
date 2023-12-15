@@ -231,12 +231,24 @@ PrefabInstance:
       objectReference: {fileID: 545132288}
     - target: {fileID: 1476966613, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
       propertyPath: npc_sprites.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1476966613, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
       propertyPath: npc_sprites.Array.data[0]
       value: 
-      objectReference: {fileID: 21300000, guid: b4db846956ead4f7e8698c8e8c2f6382, type: 3}
+      objectReference: {fileID: 21300000, guid: 1432d9ccb84ee4baa82d0c96ff458d83, type: 3}
+    - target: {fileID: 1476966613, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: npc_sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 73bc07fb2734b4cf69834f676e7d1389, type: 3}
+    - target: {fileID: 1476966613, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: npc_sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 8438027e2606a4c95a768340af95f2aa, type: 3}
+    - target: {fileID: 1476966613, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: npc_sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 76164fd08ee684dc98c0133a40fc66d9, type: 3}
     - target: {fileID: 3055527059656797204, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -1301
@@ -245,14 +257,38 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -582
       objectReference: {fileID: 0}
+    - target: {fileID: 4906915486279897625, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1432d9ccb84ee4baa82d0c96ff458d83, type: 3}
+    - target: {fileID: 4906915486279897628, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_Name
+      value: Jade
+      objectReference: {fileID: 0}
     - target: {fileID: 4906915486279897628, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
       propertyPath: m_TagString
-      value: Amelia
+      value: Jade
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906915486279897631, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 447.87878
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906915486279897631, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 904.8485
       objectReference: {fileID: 0}
     - target: {fileID: 4906915486279897631, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 324
       objectReference: {fileID: 0}
+    - target: {fileID: 4906915486279897631, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 453
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906915486361453662, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: eb0f88a6b42ca456db089989ad21bc72, type: 3}
     - target: {fileID: 4906915486361453663, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.49951172
@@ -374,8 +410,12 @@ PrefabInstance:
       value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 6126597650677328602, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: INKJSON
+      value: 
+      objectReference: {fileID: 4900000, guid: b5a219106ad4f4c5db76fffc1262b3f3, type: 3}
+    - target: {fileID: 6126597650677328602, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
       propertyPath: nextSceneName
-      value: 2GothicGlam
+      value: 13A3JMBlackScreen
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
