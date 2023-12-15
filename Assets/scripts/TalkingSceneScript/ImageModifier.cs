@@ -55,7 +55,7 @@ public class ImageModifier : MonoBehaviour
         }
     }
 
-    //Change the corresponding portrait according to the first char in a line
+    // Change the corresponding portrait according to the first char in a line
     public Sprite SwitchImage(char sprMod)
     {
         if (gm != null)

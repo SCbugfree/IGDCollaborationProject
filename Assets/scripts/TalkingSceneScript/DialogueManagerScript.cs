@@ -183,7 +183,6 @@ public class DialogueManagerScript : MonoBehaviour
     // Display text and a text-typing effect
     private IEnumerator DisplayText(string line)
     {
-
         namePanel.SetActive(true);
 
         dialogueText.text = ""; // empty dialogue text
@@ -282,12 +281,10 @@ public class DialogueManagerScript : MonoBehaviour
             else
             {
                 speaker = GameObject.FindWithTag(tag); // speaker is NPC (tag and name are same string)
+                speaker.SetActive(true);
                 namePanel.SetActive(true);
                 speakerName.text = speaker.name;
                 npcAnim = speaker.GetComponent<Animator>();
-
-                namePanel.SetActive(true);
-
                 Invoke("TalkStretchAnim", 0.01f);
             }
         }

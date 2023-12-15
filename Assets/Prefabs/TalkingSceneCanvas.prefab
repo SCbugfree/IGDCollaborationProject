@@ -163,7 +163,7 @@ GameObject:
   - component: {fileID: 9180715119473971331}
   m_Layer: 5
   m_Name: Amelia (1)
-  m_TagString: Amelia
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -239,7 +239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npc_sprites: []
-  dms: {fileID: 0}
+  dms: {fileID: 6126597650677328602}
   npcImage: {fileID: 0}
   npc_color: {r: 0, g: 0, b: 0, a: 0}
   gm: {fileID: 0}
@@ -1845,7 +1845,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.1483, y: 43}
+  m_AnchoredPosition: {x: -1.1483, y: 12}
   m_SizeDelta: {x: 1259.7035, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6727051940491609902
@@ -2134,7 +2134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npc_sprites: []
-  dms: {fileID: 0}
+  dms: {fileID: 6126597650677328602}
   npcImage: {fileID: 0}
   npc_color: {r: 0, g: 0, b: 0, a: 0}
   gm: {fileID: 0}
