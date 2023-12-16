@@ -61,13 +61,13 @@ VAR Response = ""
 
 %She points to an gothic silver-haired teen in the anime section, seemingly debating between a Devil Killer or Battle on Giant shirt. #Lilith
 
-%My daughter, Amelia, is the one over there, staring at the vinyls. Maybe they could be friends! We just moved to town, so she hasn’t met any friends yet. #Player
+%My daughter, Amelia, is the one over there, staring at the vinyls. Maybe they could be friends! We just moved to town, so she hasn’t met any friends yet. #MommyClone
 
 %Lilith would be delighted. I shall go grab her. #Jade
 
 !While Jade gets her daughter, I head over to Amelia to quickly purchase her vinyl. #Narrator
 
-%Amelia, you won’t believe it. I met this totally awesome, fellow single mom in the band section. #Amelia
+%Amelia, you won’t believe it. I met this totally awesome, fellow single mom in the band section. #MommyClone
 
 !The cashier scans Amelia’s item and puts it in a Gothic Glam bag as I hand him a twenty dollar bill. #Narrator
 
