@@ -24,26 +24,26 @@ $Welcome to Cafe Fork, guys! I’m Madi. How’s it going? #Madi
 
 -> COF_Choice
 
-== COF_Choice ==
-* [Godspeed You!] 
+=== COF_Choice ===
++ [Godspeed You!] 
     ~ Symbol = "$"
     ~ Response = "A classic!"
 -> CONTINUE
 
-* [Iced Teagan and Sara]
++ [Iced Teagan and Sara]
   ~ Symbol = "¥"
   ~ Response = "Alright."
 -> CONTINUE
 
-* [Chai Antwood] 
++ [Chai Antwood] 
  ~ Symbol = "%"
   ~ Response = "Sounds good!"
 -> CONTINUE
 
 
-
-== CONTINUE ==
+=== CONTINUE ===
 {Symbol}{Response} #Madi
+
 %Coming right up! Do you want that in Small, Medium, or Biggie Smalls? #Madi
 
 %Uh… medium… #MommyClone
@@ -136,24 +136,24 @@ $Oh right on! Pleased to meet you both! #Madi
 
 -> BAN_Choice
 
-== BAN_Choice ==
-* [Banana Bread Kennedys]
+=== BAN_Choice ===
++ [Banana Bread Kennedys]
     ~ Symbol = "%"
     ~ Response = "Ooh... I'll definitely consider that one."
 -> CONTINUE2
 
-* [Grateful (Banana) Bread] 
++ [Grateful (Banana) Bread] 
     ~ Symbol = "$"
     ~ Response = "That... actually has a nice ring to it. Strong decisions. That's art, baby!"
 -> CONTINUE2
 
-* [Right Said Banana Bread] 
++ [Right Said Banana Bread] 
     ~ Symbol = "¥"
     ~ Response = "Hmm... I don't think I get it. "
 -> CONTINUE2
 
-== CONTINUE2 ==
-{Symbol}{Response} # Madi
+=== CONTINUE2 ===
+{Symbol}{Response} #Madi
 
 $Hey, I was actually wondering if you would want to go to a concert later today. It seems like you also have an interest in bands! #Madi
 

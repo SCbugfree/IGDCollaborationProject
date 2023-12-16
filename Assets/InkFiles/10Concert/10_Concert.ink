@@ -1,5 +1,7 @@
 //This is the file storing dialogues in Scene10: Concert
 // !Narrator @Player #Amelia/Daughter, %Jade/Mommy 1, ^: Mommy 2, &: NPC/No image
+VAR Dialogue = ""
+VAR Symbol = ""
 
 !After waiting in a short line to get in, we finally find ourselves in a small venue with a stage at one end and a bar at the other. Most people here are closer to Amelia’s age than mine. I suddenly feel very out of place. #Narrator
 
@@ -91,25 +93,33 @@ $That’s my favorite thing to do. #Madi
 
 -> CON_Choice
 
-== CON_Choice ==
-* [Ask again] 
+=== CON_Choice ===
+    + [Ask again] 
+    -> Good
 
--> Good
+    + [Drop it] 
+    -> Bad
+    
+    + [Smile sheepily]
+    -> Neutral
 
-* [Drop it] 
-   
--> Bad
+=== Good ===
+    ~ Dialogue = "Haha, yeah!"
+    ~ Symbol = "$"
+    -> CHOICEMADE
 
-== Good ==
-%SO! YOU! GO! TO! A! LOT! OF! CONCERTS! OUT! HERE! HUH! #MommyClone
-$Haha, yeah! #Madi
--> CHOICEMADE
+=== Bad ===
+    ~ Dialogue = "Madi turns back her attention to the show"
+    ~ Symbol = "¥"
+    -> CHOICEMADE
 
-== Bad ==
--> CHOICEMADE
+=== Neutral ===
+    ~ Dialogue = "Madi turns back her attention to the show"
+    ~ Symbol = "%"
+    -> CHOICEMADE
 
-== CHOICEMADE ==
-!Madi turns back her attention to the show. #Narrator
+=== CHOICEMADE ===
+{Symbol}{Dialogue} #Madi
 
 !She can’t hear me, so I just stop and try to enjoy the music. #Narrator
 

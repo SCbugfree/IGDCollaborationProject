@@ -125,11 +125,12 @@ $I pinned them all myself. Maybe I could show you some time. #Jade
     ~ Symbol = "%"
     ~ Response = "Soap is… uh… an important advancement in modern society. Getting rid of germs and stuff. I would say that the people who make soap are… the true heroes here. To watch them work… is an honor."
     -> CONTINUE2
+    
 + [Love me some word jumbles.] 
     ~ Symbol = "%"
     ~ Response = "The uh… written word fascinates me. We spend so much time using words, you know? And uh… I think people would appreciate them more if they had to un-jumble them."
-    
     -> CONTINUE2
+    
 + [I learned how to juggle once.] 
     ~ Symbol = "%"
     ~ Response = "Gravity is an interesting thing, and um, I believe juggling is the pinnacle of humankind’s interaction with the… gravitational arts."
@@ -137,7 +138,9 @@ $I pinned them all myself. Maybe I could show you some time. #Jade
 
 
 === CONTINUE2 ===
-{Symbol}{Response}#MommyClone
+
+{Symbol}{Response} #Jade
+
 !Jade looks at me quizzically, but shrugs it off. #Narrator
 
 !We finish our tea and finger sandwiches. #Narrator
