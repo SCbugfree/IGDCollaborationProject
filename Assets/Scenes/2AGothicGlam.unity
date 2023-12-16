@@ -222,14 +222,42 @@ PrefabInstance:
       propertyPath: npc_sprites.Array.data[0]
       value: 
       objectReference: {fileID: 21300000, guid: b4db846956ead4f7e8698c8e8c2f6382, type: 3}
+    - target: {fileID: 732301092202956251, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 521.7143
+      objectReference: {fileID: 0}
+    - target: {fileID: 732301092202956251, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 822.2857
+      objectReference: {fileID: 0}
     - target: {fileID: 2344136464477984154, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 1432d9ccb84ee4baa82d0c96ff458d83, type: 3}
     - target: {fileID: 2423995574923731893, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
-      propertyPath: m_TagString
-      value: Player
+      propertyPath: m_Name
+      value: Lilith
       objectReference: {fileID: 0}
+    - target: {fileID: 2423995574923731893, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2423995574923731893, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_TagString
+      value: Lilith
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603444388144324130, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 626c75ff9628e4f70bf34ad17f4d6827, type: 3}
+    - target: {fileID: 3502154598384158030, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: npc_sprites.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3502154598384158030, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: npc_sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 626c75ff9628e4f70bf34ad17f4d6827, type: 3}
     - target: {fileID: 3543731530386957615, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 123

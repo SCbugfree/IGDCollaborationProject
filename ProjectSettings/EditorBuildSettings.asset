@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: 66df275173bbf46c0b8e2182a85ffef9
+  - enabled: 1
     path: Assets/Scenes/1YourNewHouseScene.unity
     guid: 8fb21eb9e54e14f189ee023e16be3729
   - enabled: 1
@@ -83,7 +86,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NameThatMom.unity
     guid: fc4808bfc20cc42c6821094d3c3f267a
-  - enabled: 1
-    path: Assets/Scenes/StartScene.unity
-    guid: 66df275173bbf46c0b8e2182a85ffef9
   m_configObjects: {}

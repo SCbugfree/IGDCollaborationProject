@@ -24,6 +24,7 @@ TagManager:
   - GameManager
   - Lilith
   - Camilla
+  - Rank
   layers:
   - Default
   - TransparentFX

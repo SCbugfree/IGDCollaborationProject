@@ -31,12 +31,6 @@ public class DialogueManagerScript : MonoBehaviour
     [SerializeField] private TextMeshProUGUI speakerName; // visually display speaker name
 
 
-    // [Header("NPC and Player Images")]
-
-    //[SerializeField] private Image image_NPC1;
-    //[SerializeField] private Image image_Player; //get player
-
-
     [Header("Choices")]
 
     [SerializeField] private GameObject[] choiceArray;
@@ -82,6 +76,8 @@ public class DialogueManagerScript : MonoBehaviour
     private float textLength;
 
     private Animator npcAnim;
+
+    private Image spk_img;
 
     //private Animator mommyAnim;
 
@@ -250,6 +246,11 @@ public class DialogueManagerScript : MonoBehaviour
     // Find speaker tag and the corresponding speaker GameObject
     private void HandleTags(List<string> currentTags)
     {
+        if (spk_img != null)
+        {
+            spk_img.enabled = false;
+        }
+
         foreach (string tag in currentTags)
         {
             TagName = tag;
@@ -281,7 +282,8 @@ public class DialogueManagerScript : MonoBehaviour
             else
             {
                 speaker = GameObject.FindWithTag(tag); // speaker is NPC (tag and name are same string)
-                speaker.SetActive(true);
+                spk_img = speaker.GetComponent<Image>();
+                spk_img.enabled = true;
                 namePanel.SetActive(true);
                 speakerName.text = speaker.name;
                 npcAnim = speaker.GetComponent<Animator>();
