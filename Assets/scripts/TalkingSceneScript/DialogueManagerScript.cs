@@ -362,35 +362,5 @@ public class DialogueManagerScript : MonoBehaviour
         mommyAnim.SetTrigger("Left");
     }
     */
-
-
-    // Screenshakes
-
-    // Screenshake function
-
-    /*
-    public AnimationCurve curve;
-    public float timeShake = 1f;
-
-    //or try Invoke
-    //somewhere before: StartCoroutine(Shaking());
-
-    IEnumerator Shaking()
-    {
-        Vector3 startPos = transform.position;
-        float elapsedTime = 0f;
-
-        while (elapsedTime < timeShake)
-        {
-            elapsedTime += Time.deltaTime;
-            float strength = curve.Evaluate(elapsedTime / timeShake);
-            transform.position = startPos + Random.insideUnitSphere;
-            yield return null;
-        }
-
-        transform.position = startPos;
-    }
-}
-    */
 }
 
