@@ -234,6 +234,10 @@ PrefabInstance:
       propertyPath: npc_sprites.Array.data[3]
       value: 
       objectReference: {fileID: 21300000, guid: 76164fd08ee684dc98c0133a40fc66d9, type: 3}
+    - target: {fileID: 4906915486279897625, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1432d9ccb84ee4baa82d0c96ff458d83, type: 3}
     - target: {fileID: 4906915486279897628, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
       propertyPath: m_Name
       value: Jade
@@ -241,6 +245,18 @@ PrefabInstance:
     - target: {fileID: 4906915486279897628, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
       propertyPath: m_TagString
       value: Jade
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906915486279897631, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 447.87878
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906915486279897631, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 904.8485
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906915486279897631, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 446
       objectReference: {fileID: 0}
     - target: {fileID: 4906915486361453662, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
       propertyPath: m_Sprite
