@@ -44,11 +44,6 @@ public class DialogueManagerScript : MonoBehaviour
     [Header("Next Scene is")]
     public string nextSceneName;
 
-    //[Header("Name Text Length Indicator")]
-
-    //public float nameL1 = 6;
-    //public float nameL2 = 10;
-
 
     public TextAsset INKJSON;
 
@@ -79,9 +74,8 @@ public class DialogueManagerScript : MonoBehaviour
 
     private Image spk_img;
 
+
     //private Animator mommyAnim;
-
-
 
     //private float nameLength;
 
@@ -353,6 +347,7 @@ public class DialogueManagerScript : MonoBehaviour
     {
         npcAnim.SetTrigger("Talk");
     }
+
 
     /*
     // Animation of Mommy Entering scene

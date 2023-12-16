@@ -48,9 +48,8 @@ public class GameManager : MonoBehaviour
 
     [Header("Choices record")]
 
-    [SerializeField] public int MadiScore = 90;
-    [SerializeField] public int JadeScore = 90;
-
+    public int MadiScore = 90;
+    public int JadeScore = 90;
 
 
     private void Awake()
@@ -87,7 +86,6 @@ public class GameManager : MonoBehaviour
         mommyPos = FindMommyPos();
         LoadMommyPrefab(canvas, mommyPos);
     }
-
 
     // Fetch canvas
     private Transform FindCanvas()
@@ -208,13 +206,13 @@ public class GameManager : MonoBehaviour
 
 
     // Record player choices in dialogues: to be used in ScoreCalculator in Final Scene
-    //Madi' score
+    // Madi' score
     public void RecordMadiChoice(int score_got)
     {
-        MadiScore += score_got;
+        MadiScore += score_got;       
     }
 
-    //Jade's score
+    // Jade's score
     public void RecordJadeChoice(int score_got)
     {
         JadeScore += score_got;

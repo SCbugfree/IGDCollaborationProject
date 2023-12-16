@@ -25,6 +25,7 @@ TagManager:
   - Lilith
   - Camilla
   - Rank
+  - TransAnim
   layers:
   - Default
   - TransparentFX

@@ -22,6 +22,11 @@ public class ImageModifier : MonoBehaviour
     [SerializeField] private GameObject gm;
     [SerializeField] private GameManager gmScript;
 
+    [Header("Choices record")]
+
+    [SerializeField] public bool Mscore_added = false;
+    [SerializeField] public bool Jscore_added = false;
+
     private string tagCheck; //check if tag of this gameObject matches the speaker tag from DialogueManagerScript
     private char sprMod; //get the sprite modifier extracted from DialogueManagerScript
 
@@ -51,6 +56,8 @@ public class ImageModifier : MonoBehaviour
         if (npcImage.tag.Equals(tagCheck)) // if the speaker is this npc
         {
             npcImage.enabled = true;
+            Mscore_added = false;
+            Jscore_added = false;
             npcImage.sprite = SwitchImage(sprMod);
         }
     }
@@ -68,25 +75,37 @@ public class ImageModifier : MonoBehaviour
 
                 // Happy
                 case '$':
-                    if (tagCheck == "Madi")
+                    if (tagCheck == "Madi" && !Mscore_added)
                     {
                         gmScript.RecordMadiChoice(10);
+                        Mscore_added = true;
+                    }
+                    else if (tagCheck == "Jade" && !Jscore_added)
+                    {
+                        gmScript.RecordJadeChoice(10);
+                        Jscore_added = true;
                     }
                     else
                     {
-                        gmScript.RecordJadeChoice(10);
+
                     }
                     return npc_sprites[1];
 
                 // Uspset
                 case '¥':
-                    if (tagCheck == "Madi")
+                    if (tagCheck == "Madi" && !Mscore_added)
                     {
                         gmScript.RecordMadiChoice(10);
+                        Mscore_added = true;
+                    }
+                    else if (tagCheck == "Jade" && !Jscore_added)
+                    {
+                        gmScript.RecordJadeChoice(10);
+                        Jscore_added = true;
                     }
                     else
                     {
-                        gmScript.RecordJadeChoice(10);
+
                     }
                     return npc_sprites[2];
 
