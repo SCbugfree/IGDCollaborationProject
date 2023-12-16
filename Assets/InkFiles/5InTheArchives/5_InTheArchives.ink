@@ -69,7 +69,6 @@ $I pinned them all myself. Maybe I could show you some time. #Jade
 + [I like your cape.]
     -> Bad2
 
--> END
 === Good2 ===
 &Th…thank you. No one’s ever complimented my home before. #Jade
 -> CHOICEMADE2
