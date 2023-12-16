@@ -1,6 +1,7 @@
 //This is the file storing dialogues in Scene9: FrontofCoffeeFork
 // !Narrator @Player #Amelia/Daughter, %Jade/Mommy 1, ^: Mommy 2, &: NPC/No image
-
+VAR Symbol = ""
+VAR Response = ""
 !I show up to the Coffee Fork at 8 in what I hope is concert-appropriate attire. I see Madi out front locking the door to the shop. #Narrator
 
 $Hey you made it! Ready for tonight? #Madi
@@ -8,23 +9,23 @@ $Hey you made it! Ready for tonight? #Madi
 -> REA_Choice
 
 == REA_Choice ==
-* [Well, it's been a while.] -> Neutral
-* [Yes of course, I definitely know what I'm talking about] -> Happy
-* [Ready? I was born ready.] -> Bad
+* [Well, it's been a while.]
+    ~ Symbol = "%"
+    ~ Response = "No worries!"
+->CONTINUE
 
-== Neutral ==
-%No worries! #Madi
--> CHOICEMADE
+* [Yes of course, I definitely know what I'm talking about] 
+    ~ Symbol = "$"
+    ~ Response = "I detect sarcasm." 
+-> CONTINUE
 
-== Happy ==
-$I detect sarcasm. #Madi
--> CHOICEMADE
+* [Ready? I was born ready.]
+    ~ Symbol = "¥"
+    ~ Response = "Haha, it's okay if you aren't."
+-> CONTINUE
 
-== Bad == 
-¥Haha, it's okay if you aren't.
--> CHOICEMADE
-
-== CHOICEMADE ==
+== CONTINUE ==
+{Symbol}{Response} #Madi
 %I get to take you to your first concert in a long time? This is gonna be awesome! Just hang with me, and you’ll be good. This scene is super supportive. It’ll be a blast. #Madi
 
 %Quick question? #MommyClone

@@ -1,9 +1,10 @@
 //This is the file storing dialogues in Scene2: Gothic Glam AFTER Daughter Battle
 // !Narrator @Player #Amelia/Daughter, %Jade/Mommy 1, ^: Mommy 2, &: NPC/No image
 
-!Well it seems as though both of our daughters are wonderful. #Narrator
+//!Well it seems as though both of our daughters are wonderful. #Narrator
 
-!After Jade and I’s intense battle, Amelia and Lilith begin talking about their favorite bands, bonding over Amelia’s new vinyl. #Narrator
+//!After Jade and I’s intense battle, Amelia and Lilith begin talking about their favorite bands, bonding over Amelia’s new vinyl. #Narrator
+!Following their mutual introductions, they withdrew to a secluded corner, leaving our company behind. Conversations ensued, Amelia and Lilith begin talking about their favorite bands, bonding over Amelia’s new vinyl.#Narrator
 
 !Meanwhile, Jade and I sit on a bench outside of Gothic Glam and talk about our interests. #Narrator
 

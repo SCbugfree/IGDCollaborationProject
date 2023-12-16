@@ -1,6 +1,7 @@
 //This is the file storing dialogues in Scene6: Coffee Shop
 // !Narrator @Player #Amelia/Daughter, %Jade/Mommy 1, ^: Mommy 2, &: NPC/No image
-
+VAR Symbol = ""
+VAR Response = ""
 !The inside of the coffee shop is incredibly warm and inviting. Vinyl records line the walls and patrons lounge around on well-worn-in couches. Some cool tunes spin on a record player next to a little stage. #Narrator
 
 $Welcome to Cafe Fork, guys! I’m Madi. How’s it going? #Madi
@@ -24,23 +25,25 @@ $Welcome to Cafe Fork, guys! I’m Madi. How’s it going? #Madi
 -> COF_Choice
 
 == COF_Choice ==
-* [Godspeed You!] -> Good
-* [Iced Teagan and Sara] -> Bad
-* [Chai Antwood] -> Neutral
+* [Godspeed You!] 
+    ~ Symbol = "$"
+    ~ Response = "A classic!"
+-> CONTINUE
 
-== Good ==
-$A classic! #Madi
--> CHOICEMADE
+* [Iced Teagan and Sara]
+  ~ Symbol = "¥"
+  ~ Response = "Alright."
+-> CONTINUE
 
-== Bad ==
-¥Alright. #Madi
--> CHOICEMADE
+* [Chai Antwood] 
+ ~ Symbol = "%"
+  ~ Response = "Sounds good!"
+-> CONTINUE
 
-== Neutral ==
-%Sounds good! #Madi
--> CHOICEMADE
 
-== CHOICEMADE ==
+
+== CONTINUE ==
+{Symbol}{Response} #Madi
 %Coming right up! Do you want that in Small, Medium, or Biggie Smalls? #Madi
 
 %Uh… medium… #MommyClone
@@ -134,23 +137,24 @@ $Oh right on! Pleased to meet you both! #Madi
 -> BAN_Choice
 
 == BAN_Choice ==
-* [Banana Bread Kennedys] -> Neutral2
-* [Grateful (Banana) Bread] -> Good2
-* [Right Said Banana Bread] -> Bad2
+* [Banana Bread Kennedys]
+    ~ Symbol = "%"
+    ~ Response = "Ooh... I'll definitely consider that one."
+-> CONTINUE2
 
-== Neutral2 ==
-%Ooh... I'll definitely consider that one. #Madi
--> CHOICEMADE2
+* [Grateful (Banana) Bread] 
+    ~ Symbol = "$"
+    ~ Response = "That... actually has a nice ring to it. Strong decisions. That's art, baby!"
+-> CONTINUE2
 
-== Good2 ==
-$That... actually has a nice ring to it. Strong decisions. That's art, baby! #Madi
--> CHOICEMADE2
+* [Right Said Banana Bread] 
+    ~ Symbol = "¥"
+    ~ Response = "Hmm... I don't think I get it. "
+-> CONTINUE2
 
-== Bad2 ==
-¥Hmm... I don't think I get it. #Madi
--> CHOICEMADE2
+== CONTINUE2 ==
+{Symbol}{Response} # Madi
 
-== CHOICEMADE2 ==
 $Hey, I was actually wondering if you would want to go to a concert later today. It seems like you also have an interest in bands! #Madi
 
 !Amelia glares at me. #Narrator

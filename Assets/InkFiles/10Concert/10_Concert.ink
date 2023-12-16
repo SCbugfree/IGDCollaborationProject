@@ -92,8 +92,13 @@ $That’s my favorite thing to do. #Madi
 -> CON_Choice
 
 == CON_Choice ==
-* [Ask again] -> Good
-* [Drop it] -> Bad
+* [Ask again] 
+
+-> Good
+
+* [Drop it] 
+   
+-> Bad
 
 == Good ==
 %SO! YOU! GO! TO! A! LOT! OF! CONCERTS! OUT! HERE! HUH! #MommyClone

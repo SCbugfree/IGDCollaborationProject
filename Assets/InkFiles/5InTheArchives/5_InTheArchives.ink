@@ -1,6 +1,7 @@
 //This is the file storing dialogues in Scene5: In the Archives
 // !Narrator @Player #Amelia/Daughter, %Jade/Mommy 1, ^: Mommy 2, &: NPC/No image
-
+VAR Symbol = ""
+VAR Response = ""
 -> Main
 
 === Main ===
@@ -59,32 +60,26 @@ $I pinned them all myself. Maybe I could show you some time. #Jade
 
 === DIA_Choice ===
 + [Your home is really impressive.] 
-    -> Good2
+    ~ Symbol ="&"
+    ~ Response = "Th…thank you. No one’s ever complimented my home before."
+    -> CONTINUE
 
     
 + [Are there a lot of Goths in Maple Bay?]
-    -> Neutral2
+    ~ Symbol = "%"
+    ~ Response = "Plenty, actually. We communicate online on Goth forums. You wouldn’t believe the Victorian-era drama that these people get into."
+    -> CONTINUE
 
     
 + [I like your cape.]
-    -> Bad2
-
-=== Good2 ===
-&Th…thank you. No one’s ever complimented my home before. #Jade
--> CHOICEMADE2
+    ~ Symbol = "¥"
+    ~ Response = "It’s a cloak, actually. But thank you. Victorian fashion is very important to me."
+    -> CONTINUE
 
 
-=== Neutral2 ===
-%Plenty, actually. We communicate online on Goth forums. You wouldn’t believe the Victorian-era drama that these people get into. #Jade
--> CHOICEMADE2
+=== CONTINUE ===
+{Symbol}{Response} #Jade
 
-
-=== Bad2 ===
-¥It’s a cloak, actually. But thank you. Victorian fashion is very important to me. #Jade
--> CHOICEMADE2
-
-
-=== CHOICEMADE2 ===
 %What got you so interested in Goth stuff? #MommyClone
 
 %Well, when I was a young girl, my father – #Jade
@@ -127,27 +122,22 @@ $I pinned them all myself. Maybe I could show you some time. #Jade
 
 === HOB_Choice ===
 + [I like watching soap-making videos on the internet.] 
-    -> Choice1
+    ~ Symbol = "%"
+    ~ Response = "Soap is… uh… an important advancement in modern society. Getting rid of germs and stuff. I would say that the people who make soap are… the true heroes here. To watch them work… is an honor."
+    -> CONTINUE2
 + [Love me some word jumbles.] 
-    -> Choice2
+    ~ Symbol = "%"
+    ~ Response = "The uh… written word fascinates me. We spend so much time using words, you know? And uh… I think people would appreciate them more if they had to un-jumble them."
+    
+    -> CONTINUE2
 + [I learned how to juggle once.] 
-    -> Choice3
-
-=== Choice1 ===
-%Soap is… uh… an important advancement in modern society. Getting rid of germs and stuff. I would say that the people who make soap are… the true heroes here. To watch them work… is an honor. #MommyClone
--> CHOICEMADE3
-
-=== Choice2 ===
-%The uh… written word fascinates me. We spend so much time using words, you know? And uh… I think people would appreciate them more if they had to un-jumble them. #MommyClone
--> CHOICEMADE3
--> DONE
-
-=== Choice3 ===
-%Gravity is an interesting thing, and um, I believe juggling is the pinnacle of humankind’s interaction with the… gravitational arts. #MommyClone
--> CHOICEMADE3
+    ~ Symbol = "%"
+    ~ Response = "Gravity is an interesting thing, and um, I believe juggling is the pinnacle of humankind’s interaction with the… gravitational arts."
+    -> CONTINUE2
 
 
-=== CHOICEMADE3 ===
+=== CONTINUE2 ===
+{Symbol}{Response}#MommyClone
 !Jade looks at me quizzically, but shrugs it off. #Narrator
 
 !We finish our tea and finger sandwiches. #Narrator
