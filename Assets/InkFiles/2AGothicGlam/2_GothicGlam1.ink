@@ -27,10 +27,11 @@ VAR Response = ""
 
 %Wow, your daughter has good taste! My Synthetic Love rocks. #MommyClone
 
+%I am quite enamored with their music as well… What’s the song you would deem your favorite? #Jade
+
 -> MSL_Choice
 
 === MSL_Choice ===
-%I am quite enamored with their music as well… What’s the song you would deem your favorite? #Jade
 + ["Adolescents"]
      ~ Symbol = "¥"
     ~ Response = "Oh… Interesting."
@@ -82,10 +83,9 @@ VAR Response = ""
 
 %Hello, Amelia. Pleasure to meet you. This is my daughter, Lilith. Do tell her about yourself, Lily. #Jade
 
+!The girl, whose countenance initially exuded an air of aloofness, unfolded a smile towards Amelia. #Narrator
 
-The girl, whose countenance initially exuded an air of aloofness, unfolded a smile towards Amelia. #Narrator
-
-"Hey Amelia, pleasure meeting you.” #Lilith
+%Hey Amelia, pleasure meeting you. #Lilith
 
 
  -> END
