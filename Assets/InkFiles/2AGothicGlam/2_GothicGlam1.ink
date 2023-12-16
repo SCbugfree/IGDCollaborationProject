@@ -27,10 +27,11 @@ VAR Response = ""
 
 %Wow, your daughter has good taste! My Synthetic Love rocks. #MommyClone
 
+%I am quite enamored with their music as well… What’s the song you would deem your favorite? #Jade
+
 -> MSL_Choice
 
 === MSL_Choice ===
-%I am quite enamored with their music as well… What’s the song you would deem your favorite? #Jade
 + ["Adolescents"]
      ~ Symbol = "¥"
     ~ Response = "Oh… Interesting."
@@ -60,13 +61,13 @@ VAR Response = ""
 
 %She points to an gothic silver-haired teen in the anime section, seemingly debating between a Devil Killer or Battle on Giant shirt. #Lilith
 
-%My daughter, Amelia, is the one over there, staring at the vinyls. Maybe they could be friends! We just moved to town, so she hasn’t met any friends yet. #Amelia
+%My daughter, Amelia, is the one over there, staring at the vinyls. Maybe they could be friends! We just moved to town, so she hasn’t met any friends yet. #MommyClone
 
 %Lilith would be delighted. I shall go grab her. #Jade
 
 !While Jade gets her daughter, I head over to Amelia to quickly purchase her vinyl. #Narrator
 
-%Amelia, you won’t believe it. I met this totally awesome, fellow single mom in the band section. #Amelia
+%Amelia, you won’t believe it. I met this totally awesome, fellow single mom in the band section. #MommyClone
 
 !The cashier scans Amelia’s item and puts it in a Gothic Glam bag as I hand him a twenty dollar bill. #Narrator
 
@@ -82,10 +83,9 @@ VAR Response = ""
 
 %Hello, Amelia. Pleasure to meet you. This is my daughter, Lilith. Do tell her about yourself, Lily. #Jade
 
+!The girl, whose countenance initially exuded an air of aloofness, unfolded a smile towards Amelia. #Narrator
 
-The girl, whose countenance initially exuded an air of aloofness, unfolded a smile towards Amelia. #Narrator
-
-"Hey Amelia, pleasure meeting you.” #Lilith
+%Hey Amelia, pleasure meeting you. #Lilith
 
 
  -> END
