@@ -82,10 +82,10 @@ VAR Response = ""
 
 %Hello, Amelia. Pleasure to meet you. This is my daughter, Lilith. Do tell her about yourself, Lily. #Jade
 
-%Lily partook in an art competition and won. It was quite delectable. #Jade
 
-!I feel a sense of competitiveness overtake me. #Narrator
+The girl, whose countenance initially exuded an air of aloofness, unfolded a smile towards Amelia. #Narrator
 
-%Well Amelia recently got a scholarship after she submitted some of her photographs. #MommyClone
+"Hey Amelia, pleasure meeting you.” #Lilith
+
 
  -> END

@@ -28,12 +28,10 @@
 === Good ===
 $I pinned them all myself. Maybe I could show you some time. #Jade
 ->CHOICEMADE
--> DONE
 
 
 === Neutral ===
 %You know, in the Victorian era there was some controversy surrounding reading. Many people thought the more tawdry novels would encourage youths into a life of crime and would cause too much of a distraction from work and school. #Jade
--> DONE
 ->CHOICEMADE
 
 

@@ -40,7 +40,7 @@ public class ImageModifier : MonoBehaviour
         }
 
         gm = GameObject.FindWithTag("GameManager");
-        GameManager gmScript = gm.GetComponent<GameManager>();
+        gmScript = gm.GetComponent<GameManager>();
 
 
         sprMod = dms.sprModifier;
