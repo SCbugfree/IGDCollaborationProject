@@ -230,6 +230,14 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 822.2857
       objectReference: {fileID: 0}
+    - target: {fileID: 1531705093621320025, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531705093621320025, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2344136464477984154, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -261,6 +269,14 @@ PrefabInstance:
     - target: {fileID: 3543731530386957615, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 123
+      objectReference: {fileID: 0}
+    - target: {fileID: 4783361002299357959, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4783361002299357959, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4906915486279897628, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
       propertyPath: m_IsActive
