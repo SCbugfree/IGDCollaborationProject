@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set;}
 
     private Transform canvas;
-    public Transform mommyPos;
+    public Transform mommyPos; // location where instance of MommyClone spawns
     public GameObject mommy_instance;
     public GameObject MommyPrefab;
 

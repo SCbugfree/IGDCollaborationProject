@@ -41,9 +41,18 @@ public class DialogueManagerScript : MonoBehaviour
     public float textL1 = 75;
     public float textL2 = 120;
 
+
     [Header("Next Scene is")]
     public string nextSceneName;
 
+
+    [Header("Positions of Mommy Instances")]
+
+    [SerializeField] private Transform mommyPos;
+    [SerializeField] private Transform targetPos; // location where instance of MommyClone will move to when mentioned in dialogue
+
+
+    [Header("Public variables")]
 
     public TextAsset INKJSON;
 
@@ -74,8 +83,7 @@ public class DialogueManagerScript : MonoBehaviour
 
     private Image spk_img;
 
-
-    //private Animator mommyAnim;
+    private GameObject mommy_instance;
 
     //private float nameLength;
 
@@ -149,10 +157,12 @@ public class DialogueManagerScript : MonoBehaviour
     {
         if (story.canContinue) // if not the end of text file
         {
+            /*
             if (displayLineCoroutine != null)
             {
                 StopCoroutine(displayLineCoroutine); // stop the displayLineCorroutine
             }
+            */
 
             line = story.Continue();
 
@@ -190,7 +200,7 @@ public class DialogueManagerScript : MonoBehaviour
 
             Debug.Log("text length is" + textLength);
 
-            //Debug.Log("Display "+line.Substring(1)); // printing text in console
+            //Debug.Log("Display "+line.Substring(1));
 
             SwitchPanel(textLength);
 
@@ -207,9 +217,8 @@ public class DialogueManagerScript : MonoBehaviour
 
             sprModifier = char.Parse(line.Substring(0, 1)); // Get the first char of the line 
 
-            dialogueIsPlaying = false;
+            dialogueIsPlaying = false; 
         }
-
     }
 
 
@@ -252,36 +261,51 @@ public class DialogueManagerScript : MonoBehaviour
             // Get speaker name
             if (TagName == "MommyClone") // if speaker is player
             {
-                //mommyAnim = GameObject.FindWithTag(TagName).GetComponent<Animator>();
-
-                speaker = GameObject.FindWithTag("GameManager");
-
+                speaker = GameObject.FindWithTag("GameManager"); // Get player input Mommy name
                 GameManager gm_script = speaker.GetComponent<GameManager>();
                 speakerName.text = gm_script.firstName;
 
                 namePanel.SetActive(true);
 
-                //Invoke("MommyEnterAnim", 0.01f);
+                mommy_instance = GameObject.FindWithTag("MommyClone");
 
-            }
-            else if (TagName == "Narrator")
-            {
-                namePanel.SetActive(false); // Disable name panel when narrator is speaking
-            }
-            else if (TagName == "Employee" || TagName == "Boy" || TagName == "LeadSinger")
-            {
-                namePanel.SetActive(true);
-                speakerName.text = TagName;
+                if (mommy_instance.transform.position != targetPos.transform.position) // Mommy moving to target pos
+                {
+                    StartCoroutine(MommyMovingAnim(targetPos));
+                }
+                else
+                {
+                    StopCoroutine(MommyMovingAnim(targetPos));
+                }
             }
             else
             {
-                speaker = GameObject.FindWithTag(tag); // speaker is NPC (tag and name are same string)
-                spk_img = speaker.GetComponent<Image>();
-                spk_img.enabled = true;
-                namePanel.SetActive(true);
-                speakerName.text = speaker.name;
-                npcAnim = speaker.GetComponent<Animator>();
-                Invoke("TalkStretchAnim", 0.01f);
+                StartCoroutine(MommyMovingAnim(mommyPos));
+
+                if (TagName == "Narrator")
+                {
+                    Debug.Log("narrator");
+                    namePanel.SetActive(false); // Disable name panel when narrator is speaking
+                }
+                else if (TagName == "Employee" || TagName == "Boy" || TagName == "LeadSinger")
+                {
+                    Debug.Log("EBL");
+                    namePanel.SetActive(true);
+                    speakerName.text = TagName;
+                }
+                else
+                {
+                    Debug.Log("NPC");
+                    speaker = GameObject.FindWithTag(tag); // speaker is NPC (tag and name are same string)
+                    spk_img = speaker.GetComponent<Image>();
+                    spk_img.enabled = true; // show NPC image
+
+                    namePanel.SetActive(true);
+                    speakerName.text = speaker.name;
+
+                    npcAnim = speaker.GetComponent<Animator>();
+                    Invoke("TalkStretchAnim", 0.01f);
+                }
             }
         }
     }
@@ -333,6 +357,8 @@ public class DialogueManagerScript : MonoBehaviour
         ProgressDialogue(); // redirecting to ProgressDialogue after clicking
     }
 
+
+
     // Animations
 
     // Arrow Setter
@@ -348,19 +374,23 @@ public class DialogueManagerScript : MonoBehaviour
         npcAnim.SetTrigger("Talk");
     }
 
-
-    /*
-    // Animation of Mommy Entering scene
-     private void MommyEnterAnim()
+   // Mommy instance entering or exiting the scene
+    IEnumerator MommyMovingAnim(Transform nextPos)
     {
-        mommyAnim.SetTrigger("Right");
-    }
+        float elapsedTime = 0f;
+        float lerpSpeed = 5f;
+        Vector3 startPos = mommy_instance.transform.position;
 
-    // Animation of Mommy Exiting scene
-    private void MommyExitAnimation()
-    {
-        mommyAnim.SetTrigger("Left");
+        if (startPos != nextPos.transform.position)
+        {
+            while (elapsedTime < 1f)
+            {
+                Vector3 smoothedPos = Vector3.Lerp(startPos, nextPos.position, elapsedTime);
+                elapsedTime += Time.deltaTime * lerpSpeed;
+                mommy_instance.transform.position = smoothedPos;
+                yield return null;
+            }
+        }
     }
-    */
 }
 

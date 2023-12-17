@@ -270,6 +270,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 324
       objectReference: {fileID: 0}
+    - target: {fileID: 4906915486361453662, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 73135681487b04ed0b51524ebb99decf, type: 3}
     - target: {fileID: 4906915486867878069, guid: ac8e93a6127a04cd7b4e6fc8d294dee0, type: 3}
       propertyPath: m_Colors.m_NormalColor.a
       value: 0
